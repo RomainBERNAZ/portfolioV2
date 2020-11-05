@@ -9,14 +9,23 @@
     background-color: black;
 
 
+    @keyframes slideshow {
+        from {
+            transform: translateX(0%);
+        }
+        to {
+            transform: translateX(-50%);
+        }
+    
+    }
+
 
     .photo {
-
         display: inline-flex;
-        animation:  5s infinite linear;
+        animation: slideshow 10s infinite linear;
 
         .photo01 {
-            padding-left: 2vw;
+            padding-left: 5vw;
             padding-top: 2vh;
             font-size: 15rem;
             font-family: Morganite;

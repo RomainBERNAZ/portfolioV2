@@ -16,10 +16,13 @@ const Projects = () => {
                 <span class="photo05">PROJECTS</span>
                 <span class="photo04">PROJECTS</span>
                 <span class="photo05">PROJECTS</span>
+                <span class="photo04">PROJECTS</span>
+
             </div>
 
         <div className="random">
-           <a href="https://romainbernaz.github.io/randomNumberReact/"> <img src="/images/random.png" alt=""/></a>
+           <a href="https://romainbernaz.github.io/randomNumberReact/"><img src="/images/random.png" alt=""/></a>
+           <a href="https://romainbernaz.github.io/todoList-react/"><img src="/images/todo.png" alt=""/></a> 
            <a href="https://romainbernaz.github.io/todoList-react/"><img src="/images/todo.png" alt=""/></a> 
         </div>
 
