@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from 'react';
-import { TweenLite, Power2 } from 'gsap';
+import { gsap, Power2 } from 'gsap';
 import './Homepage.css';
 
 const Homepage = () => {
@@ -9,7 +9,7 @@ const Homepage = () => {
   let city = useRef(null);
 
   useEffect(() => {
-    TweenLite.from(webDev, {
+    gsap.from(webDev, {
         opacity: 0,
         y: 70,
         duration: 2.5,
@@ -18,7 +18,7 @@ const Homepage = () => {
         stagger: {
             amount: 0.4}
     })
-    TweenLite.from(design, {
+    gsap.from(design, {
         opacity: 0,
         y: 70,
         duration: 2.5,
@@ -27,7 +27,7 @@ const Homepage = () => {
         stagger: {
             amount: 0.4}
     })
-    TweenLite.from(city, {
+    gsap.from(city, {
         opacity: 0,
         y: 70,
         duration: 2.5,
