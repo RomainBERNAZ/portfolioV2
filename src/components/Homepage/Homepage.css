@@ -6,6 +6,7 @@
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
+    overflow-x: hidden;
     background-color: #A49C9B;
   }
   .menu .name {
