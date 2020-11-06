@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/portfolioV2/static/css/main.b0c85cb6.chunk.css",
+    "main.css": "/portfolioV2/static/css/main.ded3d729.chunk.css",
     "main.js": "/portfolioV2/static/js/main.eec65216.chunk.js",
     "main.js.map": "/portfolioV2/static/js/main.eec65216.chunk.js.map",
     "runtime-main.js": "/portfolioV2/static/js/runtime-main.4cbf56e7.js",
@@ -10,7 +10,7 @@
     "static/js/3.1f52fc82.chunk.js": "/portfolioV2/static/js/3.1f52fc82.chunk.js",
     "static/js/3.1f52fc82.chunk.js.map": "/portfolioV2/static/js/3.1f52fc82.chunk.js.map",
     "index.html": "/portfolioV2/index.html",
-    "static/css/main.b0c85cb6.chunk.css.map": "/portfolioV2/static/css/main.b0c85cb6.chunk.css.map",
+    "static/css/main.ded3d729.chunk.css.map": "/portfolioV2/static/css/main.ded3d729.chunk.css.map",
     "static/js/2.4f361d6f.chunk.js.LICENSE.txt": "/portfolioV2/static/js/2.4f361d6f.chunk.js.LICENSE.txt",
     "static/media/App.css": "/portfolioV2/static/media/Morganite-Medium.81747e80.ttf",
     "static/media/random.3409e698.png": "/portfolioV2/static/media/random.3409e698.png",
@@ -19,7 +19,7 @@
   "entrypoints": [
     "static/js/runtime-main.4cbf56e7.js",
     "static/js/2.4f361d6f.chunk.js",
-    "static/css/main.b0c85cb6.chunk.css",
+    "static/css/main.ded3d729.chunk.css",
     "static/js/main.eec65216.chunk.js"
   ]
 }
