@@ -84,3 +84,65 @@
         width: 20vw;
     }
 }
+
+@media screen and (max-width: 890px) {
+    .bandeau {
+    
+        position: absolute;
+        top: 100vh;
+        width: 100vw;
+        height: 100vh;
+        background-color: black;
+
+        .photo {
+            display: inline-flex;
+            animation: slideshow 30s infinite linear;
+    
+            .photo01 {
+                padding-left: 5vw;
+                padding-top: 2vh;
+                font-size: 10vh;
+            }
+    
+            .photo02 {
+                padding-left: 5vw;
+                padding-top: 2vh;
+                font-size: 10vh;
+            }
+    
+            .photo03 {
+                padding-left: 5vw;
+                padding-top: 2vh;
+                font-size: 10vh;
+            }
+    
+            .photo04 {
+                padding-left: 5vw;
+                padding-top: 2vh;
+                font-size: 10vh;
+            }
+    
+            .photo05 {
+                padding-left: 5vw;
+                padding-top: 2vh;
+                font-size: 10vh;
+            }
+        }
+    
+    }
+    .random{
+        padding-top: 10vh;
+        padding-left: 10vw;
+        padding-right: 10vw;
+        display: block;
+        img{
+            height: auto;
+            border-radius: 10px;
+            width: 80vw;
+        }
+        .todo{
+            padding-top: 5vh;
+        }
+    }
+
+}

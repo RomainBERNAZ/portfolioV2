@@ -24,8 +24,9 @@ const Projects = () => {
 
         <div className="random">
            <a href="https://romainbernaz.github.io/randomNumberReact/"><img src={random} alt="random"/></a>
+           <div className="todo">
            <a href="https://romainbernaz.github.io/todoList-react/"><img src={todo} alt=""/></a> 
-           <a href="https://romainbernaz.github.io/todoList-react/"><img src="/images/todo.jpg" alt=""/></a> 
+           </div>
         </div>
 
 

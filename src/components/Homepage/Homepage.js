@@ -44,8 +44,8 @@ const Homepage = () => {
         <div class="menu">
 
         <div class="name">
-            <h2 id="surname" class="surname"> <span class="firstLetter">R</span>OMAIN</h2>
-            <h2 id="lastname" class="lastname">BERNA<span class="firstLetter">Z</span></h2>
+            <h2 class="surname"> <span class="firstLetter">R</span>OMAIN</h2>
+            <h2 class="lastname">BERNA<span class="firstLetter">Z</span></h2>
         </div>
 
         <div className="navbar">
