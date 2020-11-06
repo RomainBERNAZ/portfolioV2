@@ -1,5 +1,7 @@
 import React from 'react';
 import './Projects.css';
+import  random from '../../images/random.png'
+import  todo from '../../images/todo.png'
 
 
 const Projects = () => {
@@ -21,9 +23,9 @@ const Projects = () => {
             </div>
 
         <div className="random">
-           <a href="https://romainbernaz.github.io/randomNumberReact/"><img src="/images/random.png" alt=""/></a>
-           <a href="https://romainbernaz.github.io/todoList-react/"><img src="/images/todo.png" alt=""/></a> 
-           <a href="https://romainbernaz.github.io/todoList-react/"><img src="/images/todo.png" alt=""/></a> 
+           <a href="https://romainbernaz.github.io/randomNumberReact/"><img src={random} alt="random"/></a>
+           <a href="https://romainbernaz.github.io/todoList-react/"><img src={todo} alt=""/></a> 
+           <a href="https://romainbernaz.github.io/todoList-react/"><img src="/images/todo.jpg" alt=""/></a> 
         </div>
 
 

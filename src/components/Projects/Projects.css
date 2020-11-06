@@ -32,8 +32,8 @@
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-animation: slideshow 10s infinite linear;
-          animation: slideshow 10s infinite linear;
+  -webkit-animation: slideshow 30s infinite linear;
+          animation: slideshow 30s infinite linear;
 }
 
 .bandeau .photo .photo01 {
