@@ -7,7 +7,6 @@
     width: 100vw;
     height: 100vh;
     background-color: black;
-    overflow-x: hidden;
 
 
     @keyframes slideshow {
@@ -31,7 +30,7 @@
             font-size: 15rem;
             font-family: Morganite;
             color: black;
-            -webkit-text-stroke-width: 3px;
+            -webkit-text-stroke-width: 2px;
             -webkit-text-stroke-color: silver;
         }
 
@@ -42,48 +41,36 @@
             font-family: Morganite;
             color: silver; 
         }
-
-        .photo03 {
-            padding-left: 5vw;
-            padding-top: 2vh;
-            font-size: 15rem;
-            font-family: Morganite;
-            color: black;
-            -webkit-text-stroke-width: 2px;
-            -webkit-text-stroke-color: silver;
-        }
-
-        .photo04 {
-            padding-left: 5vw;
-            padding-top: 2vh;
-            font-size: 15rem;
-            font-family: Morganite;
-            color: silver;
-        }
-
-        .photo05 {
-            padding-left: 5vw;
-            padding-top: 2vh;
-            font-size: 15rem;
-            font-family: Morganite;
-            color: black;
-            -webkit-text-stroke-width: 2px;
-            -webkit-text-stroke-color: silver;
-        }
     }
 
 }
+.imageList{
+display: flex;
+justify-content: space-around;
 .random{
     padding-top: 10vh;
-    padding-left: 10vw;
-    padding-right: 10vw;
-    display: flex;
-    justify-content: space-between;
     img{
         height: 25rem;
         border-radius: 10px;
         width: 20vw;
     }
+}
+.todo{
+    padding-top: 10vh;
+    img{
+        height: 25rem;
+        border-radius: 10px;
+        width: 20vw;
+    }
+}
+.weather{
+    padding-top: 10vh;
+    img{
+        height: 25rem;
+        border-radius: 10px;
+        width: 20vw;
+    }
+}
 }
 
 @media screen and (max-width: 890px) {
@@ -93,6 +80,8 @@
         width: 100vw;
         height: 100vh;
         background-color: black;
+        overflow-x: hidden;
+
 
         .photo {
             display: inline-flex;
@@ -128,21 +117,33 @@
                 font-size: 10vh;
             }
         }
+    }
     
-    }
-    .random{
-        padding-top: 10vh;
-        padding-left: 10vw;
-        padding-right: 10vw;
-        display: block;
-        img{
-            height: auto;
-            border-radius: 10px;
-            width: 80vw;
-        }
-        .todo{
-            padding-top: 5vh;
-        }
-    }
-
+        .imageList{
+            display: block;
+            .random{
+                text-align: center;
+                img{
+                    height: 20rem;
+                    border-radius: 10px;
+                    width: auto;
+                }
+            }
+            .todo{
+                text-align: center;
+                img{
+                    height: 20rem;
+                    border-radius: 10px;
+                    width: auto;
+                }
+            }
+            .weather{
+                text-align: center;
+                img{
+                    height: 20rem;
+                    border-radius: 10px;
+                    width: auto;
+                }
+            }
+            }
 }

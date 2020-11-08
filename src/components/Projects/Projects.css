@@ -4,7 +4,6 @@
   width: 100vw;
   height: 100vh;
   background-color: black;
-  overflow-x: hidden;
 }
 
 @-webkit-keyframes slideshow {
@@ -43,7 +42,7 @@
   font-size: 15rem;
   font-family: Morganite;
   color: black;
-  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: silver;
 }
 
@@ -55,47 +54,39 @@
   color: silver;
 }
 
-.bandeau .photo .photo03 {
-  padding-left: 5vw;
-  padding-top: 2vh;
-  font-size: 15rem;
-  font-family: Morganite;
-  color: black;
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: silver;
-}
-
-.bandeau .photo .photo04 {
-  padding-left: 5vw;
-  padding-top: 2vh;
-  font-size: 15rem;
-  font-family: Morganite;
-  color: silver;
-}
-
-.bandeau .photo .photo05 {
-  padding-left: 5vw;
-  padding-top: 2vh;
-  font-size: 15rem;
-  font-family: Morganite;
-  color: black;
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: silver;
-}
-
-.random {
-  padding-top: 10vh;
-  padding-left: 10vw;
-  padding-right: 10vw;
+.imageList {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
-.random img {
+.imageList .random {
+  padding-top: 10vh;
+}
+
+.imageList .random img {
+  height: 25rem;
+  border-radius: 10px;
+  width: 20vw;
+}
+
+.imageList .todo {
+  padding-top: 10vh;
+}
+
+.imageList .todo img {
+  height: 25rem;
+  border-radius: 10px;
+  width: 20vw;
+}
+
+.imageList .weather {
+  padding-top: 10vh;
+}
+
+.imageList .weather img {
   height: 25rem;
   border-radius: 10px;
   width: 20vw;
@@ -108,6 +99,7 @@
     width: 100vw;
     height: 100vh;
     background-color: black;
+    overflow-x: hidden;
   }
   .bandeau .photo {
     display: -webkit-inline-box;
@@ -141,19 +133,32 @@
     padding-top: 2vh;
     font-size: 10vh;
   }
-  .random {
-    padding-top: 10vh;
-    padding-left: 10vw;
-    padding-right: 10vw;
+  .imageList {
     display: block;
   }
-  .random img {
-    height: auto;
-    border-radius: 10px;
-    width: 80vw;
+  .imageList .random {
+    text-align: center;
   }
-  .random .todo {
-    padding-top: 5vh;
+  .imageList .random img {
+    height: 20rem;
+    border-radius: 10px;
+    width: auto;
+  }
+  .imageList .todo {
+    text-align: center;
+  }
+  .imageList .todo img {
+    height: 20rem;
+    border-radius: 10px;
+    width: auto;
+  }
+  .imageList .weather {
+    text-align: center;
+  }
+  .imageList .weather img {
+    height: 20rem;
+    border-radius: 10px;
+    width: auto;
   }
 }
 /*# sourceMappingURL=Projects.css.map */
