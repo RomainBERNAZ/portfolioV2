@@ -63,7 +63,7 @@ const Homepage = () => {
         <div class="title">
             <h3 ref={el => {webDev = el}} id="webDev" class="webDev">WEB DEVELOPER </h3>
             <h3 ref={el => {design = el}} id="design" class="design">DESIGN ENTHOUSIAST </h3>
-            <h4 ref={el => {city = el}} id="city" class="city">NANTES FR.</h4>
+            <h4 ref={el => {city = el}} id="city" class="city">NANTES FR</h4>
         </div>
         <script src="./Homepage.js"></script>
     </div>
