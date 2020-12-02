@@ -1,12 +1,12 @@
 .menu {
-  position: fixed;
+  position: fixed !important;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
+  overflow: hidden;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
   background-color: #A49C9B;
-  overflow-x: hidden;
 }
 
 .menu .name {
@@ -36,6 +36,7 @@
 }
 
 .menu .navbar .hamburger {
+  display: none;
   position: absolute;
   right: 5vw;
   top: 5vh;
@@ -129,12 +130,12 @@
 }
 
 .bandeau {
+  overflow-x: hidden;
   position: absolute;
   top: 100vh;
   width: 100vw;
-  height: 200vh;
+  height: 450vh;
   background-color: black;
-  overflow-x: hidden;
 }
 
 @-webkit-keyframes slideshow {
@@ -185,7 +186,7 @@
   color: silver;
 }
 
-.imageList {
+.fairmadeBlock {
   height: 100vh;
   width: 100%;
   display: -webkit-inline-box;
@@ -193,11 +194,11 @@
   display: inline-flex;
 }
 
-.imageList .fairmadeImage {
+.fairmadeBlock .fairmadeImage {
   width: 50%;
 }
 
-.imageList .fairmadeImage .fairmade {
+.fairmadeBlock .fairmadeImage .fairmade {
   position: absolute;
   left: 10vw;
   top: 40vh;
@@ -205,7 +206,7 @@
   height: 60vh;
 }
 
-.imageList .fairmadeImage .fairmadeSquare {
+.fairmadeBlock .fairmadeImage .fairmadeSquare {
   position: absolute;
   top: 50vh;
   z-index: 1;
@@ -215,26 +216,243 @@
   background-color: silver;
 }
 
-.imageList .fairmadeText {
+.fairmadeBlock .fairmadeText {
   width: 50%;
 }
 
-.imageList .fairmadeText .fairmadeTitle {
+.fairmadeBlock .fairmadeText .fairmadeTitle {
   text-align: left;
   padding-left: 10vw;
   color: silver;
-  margin-top: 26vh;
+  margin-top: 20vh;
   font-family: ChampagneBold;
   font-size: 5rem;
   text-decoration: none;
 }
 
-.imageList .fairmadeText .fairmadeExp {
+.fairmadeBlock .fairmadeText .fairmadeExp {
+  padding-left: 10vw;
+  color: silver;
+  margin-top: 13vh;
+  line-height: 5vh;
+  font-family: Champagne;
+  font-size: 2.2rem;
+}
+
+.fairmadeBlock .fairmadeText a {
+  position: relative;
+  top: 13vh;
+  text-decoration: none;
+  color: silver;
+  padding-left: 30vw;
+  margin-top: 5vh !important;
+  font-size: 3.5rem;
+}
+
+.fairmadeBlock .fairmadeText a:hover {
+  color: grey;
+}
+
+.twitterBlock {
+  height: 100vh;
+  width: 100%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.twitterBlock .twitterImage {
+  width: 50%;
+}
+
+.twitterBlock .twitterImage .twitter {
+  position: absolute;
+  right: 10vw;
+  top: 160vh;
+  z-index: 2;
+  height: 60vh;
+}
+
+.twitterBlock .twitterImage .twitterSquare {
+  position: absolute;
+  top: 150vh;
+  z-index: 1;
+  right: 15vw;
+  height: 60vh;
+  width: 60vh;
+  background-color: silver;
+}
+
+.twitterBlock .twitterText {
+  width: 50%;
+}
+
+.twitterBlock .twitterText .twitterTitle {
+  text-align: left;
+  padding-left: 10vw;
+  color: silver;
+  margin-top: 22vh;
+  font-family: ChampagneBold;
+  font-size: 5rem;
+  text-decoration: none;
+}
+
+.twitterBlock .twitterText .twitterExp {
+  padding-left: 10vw;
+  color: silver;
+  margin-top: 12vh;
+  font-family: Champagne;
+  font-size: 2.2rem;
+  line-height: 5vh;
+}
+
+.twitterBlock .twitterText a {
+  position: relative;
+  top: 12vh;
+  text-decoration: none;
+  color: silver;
+  padding-left: 42vw;
+  margin-top: 5vh !important;
+  font-size: 3.5rem;
+}
+
+.twitterBlock .twitterText a:hover {
+  color: grey;
+}
+
+.weatherBlock {
+  height: 100vh;
+  width: 100%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.weatherBlock .weatherImage {
+  width: 50%;
+}
+
+.weatherBlock .weatherImage .weather {
+  position: absolute;
+  left: 10vw;
+  top: 260vh;
+  z-index: 2;
+  height: 60vh;
+}
+
+.weatherBlock .weatherImage .weatherSquare {
+  position: absolute;
+  top: 270vh;
+  z-index: 1;
+  left: 15vw;
+  height: 60vh;
+  width: 60vh;
+  background-color: silver;
+}
+
+.weatherBlock .weatherText {
+  width: 50%;
+}
+
+.weatherBlock .weatherText .weatherTitle {
+  text-align: left;
+  padding-left: 10vw;
+  color: silver;
+  margin-top: 40vh;
+  font-family: ChampagneBold;
+  font-size: 5rem;
+  text-decoration: none;
+}
+
+.weatherBlock .weatherText .weatherExp {
+  padding-left: 10vw;
+  color: silver;
+  margin-top: 11vh;
+  font-family: Champagne;
+  font-size: 2.2rem;
+  line-height: 5vh;
+}
+
+.weatherBlock .weatherText a {
+  position: relative;
+  top: 11vh;
+  text-decoration: none;
+  color: silver;
+  padding-left: 39vw;
+  margin-top: 5vh !important;
+  font-size: 3.5rem;
+}
+
+.weatherBlock .weatherText a:hover {
+  color: grey;
+}
+
+.recipeBlock {
+  height: 100vh;
+  width: 100%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.recipeBlock .recipeImage {
+  width: 50%;
+}
+
+.recipeBlock .recipeImage .recipe {
+  position: absolute;
+  right: 10vw;
+  top: 370vh;
+  z-index: 2;
+  height: 60vh;
+}
+
+.recipeBlock .recipeImage .recipeSquare {
+  position: absolute;
+  top: 360vh;
+  z-index: 1;
+  right: 15vw;
+  height: 60vh;
+  width: 60vh;
+  background-color: silver;
+}
+
+.recipeBlock .recipeText {
+  width: 50%;
+}
+
+.recipeBlock .recipeText .recipeTitle {
+  text-align: left;
+  padding-left: 10vw;
+  color: silver;
+  margin-top: 32vh;
+  font-family: ChampagneBold;
+  font-size: 5rem;
+  text-decoration: none;
+}
+
+.recipeBlock .recipeText .recipeExp {
   padding-left: 10vw;
   color: silver;
   margin-top: 7vh;
   font-family: Champagne;
   font-size: 2.2rem;
+  line-height: 5vh;
+}
+
+.recipeBlock .recipeText a {
+  display: none;
+  position: relative;
+  top: 7vh;
+  text-decoration: none;
+  color: silver;
+  padding-left: 37vw;
+  margin-top: 5vh !important;
+  font-size: 3.5rem;
+}
+
+.recipeBlock .recipeText a:hover {
+  color: grey;
 }
 
 @media screen and (max-width: 890px) {
@@ -298,5 +516,10 @@
 * {
   padding: 0;
   margin: 0;
+  cursor: none;
+}
+
+body {
+  overflow-x: hidden;
 }
 /*# sourceMappingURL=App.css.map */

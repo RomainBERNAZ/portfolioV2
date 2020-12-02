@@ -1,6 +1,7 @@
 .cursor{
     z-index: 1000;
     border-radius: 50%;
+    pointer-events: none;
     height: 50px;
     width: 50px;
     color: white;

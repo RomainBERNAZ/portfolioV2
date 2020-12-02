@@ -1,12 +1,12 @@
 .menu {
-  position: fixed;
+  position: fixed !important;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
+  overflow: hidden;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
   background-color: #A49C9B;
-  overflow-x: hidden;
 }
 
 .menu .name {
@@ -36,6 +36,7 @@
 }
 
 .menu .navbar .hamburger {
+  display: none;
   position: absolute;
   right: 5vw;
   top: 5vh;

@@ -1,13 +1,12 @@
 
 
 .bandeau {
-    
+    overflow-x: hidden;
     position: absolute;
     top: 100vh;
     width: 100vw;
-    height: 350vh;
+    height: 450vh;
     background-color: black;
-    overflow-x: hidden;
 
 
     @keyframes slideshow {
@@ -74,7 +73,7 @@
             text-align: left;
             padding-left: 10vw;
             color: silver;
-            margin-top: 26vh;
+            margin-top: 20vh;
             font-family: ChampagneBold;
             font-size: 5rem;
             text-decoration: none;
@@ -82,11 +81,22 @@
         .fairmadeExp{
             padding-left: 10vw;
             color: silver;
-            margin-top: 7vh;
+            margin-top: 13vh;
             line-height: 5vh;
             font-family: Champagne;
             font-size: 2.2rem;
-
+        }
+        a{
+            position: relative;
+            top: 13vh;
+            text-decoration: none;
+            color: silver;
+            padding-left: 30vw;
+            margin-top: 5vh !important; 
+            font-size: 3.5rem;
+            &:hover{
+                color: grey;
+            }
         }
     }
 
@@ -121,7 +131,7 @@
             text-align: left;
             padding-left: 10vw;
             color: silver;
-            margin-top: 40vh;
+            margin-top: 22vh;
             font-family: ChampagneBold;
             font-size: 5rem;
             text-decoration: none;
@@ -129,11 +139,23 @@
         .twitterExp{
             padding-left: 10vw;
             color: silver;
-            margin-top: 7vh;
+            margin-top: 12vh;
             font-family: Champagne;
             font-size: 2.2rem;
             line-height: 5vh;
 
+        }
+        a{
+            position: relative;
+            top: 12vh;
+            text-decoration: none;
+            color: silver;
+            padding-left: 42vw;
+            margin-top: 5vh !important; 
+            font-size: 3.5rem;
+            &:hover{
+                color: grey;
+            }
         }
     }
 
@@ -168,7 +190,7 @@
             text-align: left;
             padding-left: 10vw;
             color: silver;
-            margin-top: 46vh;
+            margin-top: 40vh;
             font-family: ChampagneBold;
             font-size: 5rem;
             text-decoration: none;
@@ -176,10 +198,81 @@
         .weatherExp{
             padding-left: 10vw;
             color: silver;
+            margin-top: 11vh;
+            font-family: Champagne;
+            font-size: 2.2rem;
+            line-height: 5vh;
+        }
+        a{
+            position: relative;
+            top: 11vh;
+            text-decoration: none;
+            color: silver;
+            padding-left: 39vw;
+            margin-top: 5vh !important; 
+            font-size: 3.5rem;
+            &:hover{
+                color: grey;
+            }
+        }
+    }
+
+}
+
+.recipeBlock{
+    height: 100vh;
+    width: 100%;
+    display: inline-flex;
+    .recipeImage{
+        width: 50%;
+        .recipe{
+            position: absolute;
+            right: 10vw;
+            top: 370vh;
+            z-index: 2;
+            height: 60vh;
+        }
+        .recipeSquare{
+            position: absolute;
+            top: 360vh;
+            z-index: 1;
+            right: 15vw;
+            height: 60vh;
+            width: 60vh;
+            background-color: silver;
+        }
+    }
+    .recipeText{
+        width: 50%;
+        .recipeTitle{
+            text-align: left;
+            padding-left: 10vw;
+            color: silver;
+            margin-top: 32vh;
+            font-family: ChampagneBold;
+            font-size: 5rem;
+            text-decoration: none;
+        }
+        .recipeExp{
+            padding-left: 10vw;
+            color: silver;
             margin-top: 7vh;
             font-family: Champagne;
             font-size: 2.2rem;
             line-height: 5vh;
+        }
+        a{
+            display: none;
+            position: relative;
+            top: 7vh;
+            text-decoration: none;
+            color: silver;
+            padding-left: 37vw;
+            margin-top: 5vh !important; 
+            font-size: 3.5rem;
+            &:hover{
+                color: grey;
+            }
         }
     }
 
@@ -188,7 +281,7 @@
 @media screen and (max-width: 890px) {
     .bandeau {
         position: absolute;
-        top: 100vh;
+        top: 100vh; 
         width: 100vw;
         height: 100vh;
         background-color: black;
