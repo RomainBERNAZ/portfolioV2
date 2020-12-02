@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,OAAO,CAAA;EACH,OAAO,EAAE,IAAI;EACb,aAAa,EAAE,GAAG;EAClB,MAAM,EAAE,IAAI;EACZ,KAAK,EAAE,IAAI;EACX,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,SAAS;EACjB,QAAQ,EAAE,KAAK;EACf,UAAU,EAAE,MAAM;EAClB,SAAS,EAAE,oBAAoB;EAC/B,cAAc,EAAE,UAAU;CAC7B",
+    "sources": [
+        "Cursor.scss"
+    ],
+    "names": [],
+    "file": "Cursor.css"
+}

@@ -2,8 +2,9 @@
   position: absolute;
   top: 100vh;
   width: 100vw;
-  height: 110vh;
+  height: 350vh;
   background-color: black;
+  overflow-x: hidden;
 }
 
 @-webkit-keyframes slideshow {
@@ -54,160 +55,163 @@
   color: silver;
 }
 
-.imageList {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-.imageList .flip-card {
-  padding-top: 10vh;
-  background-color: transparent;
-  width: 20vw;
-  height: 25rem;
-  -webkit-perspective: 1000px;
-          perspective: 1000px;
-  border-radius: 10px;
-}
-
-.imageList .flip-card .inner {
-  position: relative;
+.fairmadeBlock {
+  height: 100vh;
   width: 100%;
-  height: 100%;
-  text-align: center;
-  -webkit-transition: -webkit-transform 0.6s;
-  transition: -webkit-transform 0.6s;
-  transition: transform 0.6s;
-  transition: transform 0.6s, -webkit-transform 0.6s;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }
 
-.imageList .flip-card .inner .front {
-  background-color: #A49C9B;
-  color: black;
-  border-radius: 10px;
-  font-family: Morganite;
+.fairmadeBlock .fairmadeImage {
+  width: 50%;
 }
 
-.imageList .flip-card .inner .front h3 {
-  padding-top: 1vh;
-  font-size: 7vh;
-  text-decoration: underline;
-}
-
-.imageList .flip-card .inner .front p {
-  padding-top: 3vh;
-  padding-left: 1.5vw;
-  padding-right: 1.5vw;
-  font-size: 3.5vh;
-}
-
-.imageList .flip-card .inner .back {
-  color: white;
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
-}
-
-.imageList .flip-card .inner .back img {
-  height: 25rem;
-  border-radius: 10px;
-  width: 20vw;
-}
-
-.imageList .flip-card:hover .inner {
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
-}
-
-.imageList .front, .imageList .back {
+.fairmadeBlock .fairmadeImage .fairmade {
   position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
+  left: 10vw;
+  top: 40vh;
+  z-index: 2;
+  height: 60vh;
 }
 
-.imageList2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-.imageList2 .flip-card {
-  padding-top: 10vh;
-  background-color: transparent;
-  width: 20vw;
-  height: 25rem;
-  -webkit-perspective: 1000px;
-          perspective: 1000px;
-  border-radius: 10px;
-}
-
-.imageList2 .flip-card .inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  -webkit-transition: -webkit-transform 0.6s;
-  transition: -webkit-transform 0.6s;
-  transition: transform 0.6s;
-  transition: transform 0.6s, -webkit-transform 0.6s;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-
-.imageList2 .flip-card .inner .front {
-  background-color: #A49C9B;
-  color: black;
-  border-radius: 10px;
-  font-family: Morganite;
-}
-
-.imageList2 .flip-card .inner .front h3 {
-  padding-top: 1vh;
-  font-size: 7vh;
-  text-decoration: underline;
-}
-
-.imageList2 .flip-card .inner .front p {
-  padding-top: 3vh;
-  padding-left: 1.5vw;
-  padding-right: 1.5vw;
-  font-size: 3.5vh;
-}
-
-.imageList2 .flip-card .inner .back {
-  color: white;
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
-}
-
-.imageList2 .flip-card .inner .back img {
-  height: 25rem;
-  border-radius: 10px;
-  width: 20vw;
-}
-
-.imageList2 .flip-card:hover .inner {
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
-}
-
-.imageList2 .front, .imageList2 .back {
+.fairmadeBlock .fairmadeImage .fairmadeSquare {
   position: absolute;
+  top: 50vh;
+  z-index: 1;
+  left: 15vw;
+  height: 60vh;
+  width: 60vh;
+  background-color: silver;
+}
+
+.fairmadeBlock .fairmadeText {
+  width: 50%;
+}
+
+.fairmadeBlock .fairmadeText .fairmadeTitle {
+  text-align: left;
+  padding-left: 10vw;
+  color: silver;
+  margin-top: 26vh;
+  font-family: ChampagneBold;
+  font-size: 5rem;
+  text-decoration: none;
+}
+
+.fairmadeBlock .fairmadeText .fairmadeExp {
+  padding-left: 10vw;
+  color: silver;
+  margin-top: 7vh;
+  line-height: 5vh;
+  font-family: Champagne;
+  font-size: 2.2rem;
+}
+
+.twitterBlock {
+  height: 100vh;
   width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.twitterBlock .twitterImage {
+  width: 50%;
+}
+
+.twitterBlock .twitterImage .twitter {
+  position: absolute;
+  right: 10vw;
+  top: 160vh;
+  z-index: 2;
+  height: 60vh;
+}
+
+.twitterBlock .twitterImage .twitterSquare {
+  position: absolute;
+  top: 150vh;
+  z-index: 1;
+  right: 15vw;
+  height: 60vh;
+  width: 60vh;
+  background-color: silver;
+}
+
+.twitterBlock .twitterText {
+  width: 50%;
+}
+
+.twitterBlock .twitterText .twitterTitle {
+  text-align: left;
+  padding-left: 10vw;
+  color: silver;
+  margin-top: 40vh;
+  font-family: ChampagneBold;
+  font-size: 5rem;
+  text-decoration: none;
+}
+
+.twitterBlock .twitterText .twitterExp {
+  padding-left: 10vw;
+  color: silver;
+  margin-top: 7vh;
+  font-family: Champagne;
+  font-size: 2.2rem;
+  line-height: 5vh;
+}
+
+.weatherBlock {
+  height: 100vh;
+  width: 100%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.weatherBlock .weatherImage {
+  width: 50%;
+}
+
+.weatherBlock .weatherImage .weather {
+  position: absolute;
+  left: 10vw;
+  top: 260vh;
+  z-index: 2;
+  height: 60vh;
+}
+
+.weatherBlock .weatherImage .weatherSquare {
+  position: absolute;
+  top: 270vh;
+  z-index: 1;
+  left: 15vw;
+  height: 60vh;
+  width: 60vh;
+  background-color: silver;
+}
+
+.weatherBlock .weatherText {
+  width: 50%;
+}
+
+.weatherBlock .weatherText .weatherTitle {
+  text-align: left;
+  padding-left: 10vw;
+  color: silver;
+  margin-top: 46vh;
+  font-family: ChampagneBold;
+  font-size: 5rem;
+  text-decoration: none;
+}
+
+.weatherBlock .weatherText .weatherExp {
+  padding-left: 10vw;
+  color: silver;
+  margin-top: 7vh;
+  font-family: Champagne;
+  font-size: 2.2rem;
+  line-height: 5vh;
 }
 
 @media screen and (max-width: 890px) {
@@ -235,48 +239,6 @@
     padding-left: 5vw;
     padding-top: 2vh;
     font-size: 10vh;
-  }
-  .bandeau .photo .photo03 {
-    padding-left: 5vw;
-    padding-top: 2vh;
-    font-size: 10vh;
-  }
-  .bandeau .photo .photo04 {
-    padding-left: 5vw;
-    padding-top: 2vh;
-    font-size: 10vh;
-  }
-  .bandeau .photo .photo05 {
-    padding-left: 5vw;
-    padding-top: 2vh;
-    font-size: 10vh;
-  }
-  .imageList {
-    display: block;
-  }
-  .imageList .random {
-    text-align: center;
-  }
-  .imageList .random img {
-    height: 20rem;
-    border-radius: 10px;
-    width: auto;
-  }
-  .imageList .todo {
-    text-align: center;
-  }
-  .imageList .todo img {
-    height: 20rem;
-    border-radius: 10px;
-    width: auto;
-  }
-  .imageList .weather {
-    text-align: center;
-  }
-  .imageList .weather img {
-    height: 20rem;
-    border-radius: 10px;
-    width: auto;
   }
 }
 /*# sourceMappingURL=Projects.css.map */

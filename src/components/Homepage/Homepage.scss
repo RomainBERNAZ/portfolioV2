@@ -5,11 +5,11 @@
     width: 100vw;
     display: inline-flex;
     background-color: #A49C9B;
+    overflow-x: hidden;
     
     .name {
         margin-left: 10vh;
         margin-top: 4vh;
-
         .surname {
             font-family: Morganite;
             font-size: 50vh;

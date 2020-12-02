@@ -6,15 +6,10 @@
   display: -ms-inline-flexbox;
   display: inline-flex;
   background-color: #A49C9B;
+  overflow-x: hidden;
 }
 
 .menu .name {
-  -webkit-animation: 2s linear;
-          animation: 2s linear;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  -webkit-animation-delay: 5s;
-          animation-delay: 5s;
   margin-left: 10vh;
   margin-top: 4vh;
 }
@@ -25,12 +20,6 @@
 }
 
 .menu .name .surname .firstLetter {
-  color: whitesmoke;
-}
-
-.menu .name .nom {
-  font-family: Morganite;
-  font-size: 400px;
   color: whitesmoke;
 }
 
@@ -96,28 +85,95 @@
   font-size: 150px;
 }
 
+@media screen and (max-width: 890px) {
+  .menu {
+    position: fixed !important;
+    height: 100vh;
+    width: 100vw;
+    display: block;
+    overflow-x: hidden;
+  }
+  .menu .name {
+    text-align: center;
+    margin-left: 0;
+    margin-top: 0;
+  }
+  .menu .name .surname {
+    font-size: 30vh;
+  }
+  .menu .name .lastname {
+    padding-top: 15vh;
+    margin-top: -23vh;
+    padding-bottom: 35vh;
+    font-size: 30vh;
+  }
+  .menu .navbar {
+    display: none;
+  }
+  .menu .title {
+    position: absolute;
+    left: 0;
+    top: 60%;
+    width: 100%;
+    text-align: center;
+  }
+  .menu .title .webDev {
+    font-size: 12vh;
+  }
+  .menu .title .design {
+    font-size: 12vh;
+  }
+  .menu .title .city {
+    font-size: 12vh;
+  }
+}
+
 .bandeau {
   position: absolute;
   top: 100vh;
-  height: 100vh;
+  width: 100vw;
+  height: 200vh;
   background-color: black;
-  -webkit-animation: 3s infinite linear;
-          animation: 3s infinite linear;
+  overflow-x: hidden;
+}
+
+@-webkit-keyframes slideshow {
+  from {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  to {
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+
+@keyframes slideshow {
+  from {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  to {
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
 }
 
 .bandeau .photo {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  -webkit-animation: slideshow 30s infinite linear;
+          animation: slideshow 30s infinite linear;
 }
 
 .bandeau .photo .photo01 {
-  padding-left: 2vw;
+  padding-left: 5vw;
   padding-top: 2vh;
   font-size: 15rem;
   font-family: Morganite;
   color: black;
-  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: silver;
 }
 
@@ -129,119 +185,83 @@
   color: silver;
 }
 
-.bandeau .photo .photo03 {
-  padding-left: 5vw;
-  padding-top: 2vh;
-  font-size: 15rem;
-  font-family: Morganite;
-  color: black;
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: silver;
+.imageList {
+  height: 100vh;
+  width: 100%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }
 
-.bandeau .photo .photo04 {
-  padding-left: 5vw;
-  padding-top: 2vh;
-  font-size: 15rem;
-  font-family: Morganite;
+.imageList .fairmadeImage {
+  width: 50%;
+}
+
+.imageList .fairmadeImage .fairmade {
+  position: absolute;
+  left: 10vw;
+  top: 40vh;
+  z-index: 2;
+  height: 60vh;
+}
+
+.imageList .fairmadeImage .fairmadeSquare {
+  position: absolute;
+  top: 50vh;
+  z-index: 1;
+  left: 15vw;
+  height: 60vh;
+  width: 60vh;
+  background-color: silver;
+}
+
+.imageList .fairmadeText {
+  width: 50%;
+}
+
+.imageList .fairmadeText .fairmadeTitle {
+  text-align: left;
+  padding-left: 10vw;
   color: silver;
+  margin-top: 26vh;
+  font-family: ChampagneBold;
+  font-size: 5rem;
+  text-decoration: none;
 }
 
-.bandeau .photo .photo05 {
-  padding-left: 5vw;
-  padding-top: 2vh;
-  font-size: 15rem;
-  font-family: Morganite;
-  color: black;
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: silver;
+.imageList .fairmadeText .fairmadeExp {
+  padding-left: 10vw;
+  color: silver;
+  margin-top: 7vh;
+  font-family: Champagne;
+  font-size: 2.2rem;
 }
 
-@-webkit-keyframes slideshow {
-  0% {
-    -webkit-transform: translateX(100%);
-            transform: translateX(100%);
+@media screen and (max-width: 890px) {
+  .bandeau {
+    position: absolute;
+    top: 100vh;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    overflow-x: hidden;
   }
-  100% {
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
+  .bandeau .photo {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-animation: slideshow 30s infinite linear;
+            animation: slideshow 30s infinite linear;
   }
-}
-
-@keyframes slideshow {
-  0% {
-    -webkit-transform: translateX(100%);
-            transform: translateX(100%);
+  .bandeau .photo .photo01 {
+    padding-left: 5vw;
+    padding-top: 2vh;
+    font-size: 10vh;
   }
-  100% {
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
-  }
-}
-
-@-webkit-keyframes slideshow2 {
-  0% {
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
-  }
-  100% {
-    -webkit-transform: translateX(1427px);
-            transform: translateX(1427px);
-  }
-}
-
-@keyframes slideshow2 {
-  0% {
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
-  }
-  100% {
-    -webkit-transform: translateX(1427px);
-            transform: translateX(1427px);
-  }
-}
-
-@-webkit-keyframes title {
-  0% {
-    -webkit-transform: translate(0px, 0px);
-            transform: translate(0px, 0px);
-  }
-  100% {
-    -webkit-transform: translate(1000px, -1000px);
-            transform: translate(1000px, -1000px);
-  }
-}
-
-@keyframes title {
-  0% {
-    -webkit-transform: translate(0px, 0px);
-            transform: translate(0px, 0px);
-  }
-  100% {
-    -webkit-transform: translate(1000px, -1000px);
-            transform: translate(1000px, -1000px);
-  }
-}
-
-@-webkit-keyframes name {
-  0% {
-    -webkit-transform: translate(0px, 0px);
-            transform: translate(0px, 0px);
-  }
-  100% {
-    -webkit-transform: translate(-1100px, -1100px);
-            transform: translate(-1100px, -1100px);
-  }
-}
-
-@keyframes name {
-  0% {
-    -webkit-transform: translate(0px, 0px);
-            transform: translate(0px, 0px);
-  }
-  100% {
-    -webkit-transform: translate(-1100px, -1100px);
-            transform: translate(-1100px, -1100px);
+  .bandeau .photo .photo02 {
+    padding-left: 5vw;
+    padding-top: 2vh;
+    font-size: 10vh;
   }
 }
 
@@ -265,12 +285,18 @@
   src: url("./fonts/Morganite/Morganite-Black.ttf");
 }
 
+@font-face {
+  font-family: Champagne;
+  src: url("./fonts/Champagne/Champagne & Limousines.ttf");
+}
+
+@font-face {
+  font-family: ChampagneBold;
+  src: url("./fonts/Champagne/Champagne & Limousines Bold.ttf");
+}
+
 * {
   padding: 0;
   margin: 0;
-}
-
-body {
-  overflow-x: hidden;
 }
 /*# sourceMappingURL=App.css.map */

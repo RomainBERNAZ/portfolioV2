@@ -1,5 +1,5 @@
 // Import des feuilles de style liées aux différentes sections.
-@import '../components/Homepage/Homepage.scss','../components/Projects/Projects.scss', './animations.scss';
+@import '../components/Homepage/Homepage.scss','../components/Projects/Projects.scss';
 
 // Import des polices nécessaires au site. 
 @font-face {
@@ -18,13 +18,22 @@
     font-family: Morganite4;
     src: url("./fonts/Morganite/Morganite-Black.ttf")
 }
+@font-face {
+    font-family: Champagne;
+    src: url("./fonts/Champagne/Champagne\ &\ Limousines.ttf")
+}
+@font-face {
+    font-family: ChampagneBold;
+    src: url("./fonts/Champagne/Champagne\ &\ Limousines\ Bold.ttf")
+}
+
 
 
 
 * {
     padding: 0;
     margin: 0;
-    
 }
 
- 
+
+
