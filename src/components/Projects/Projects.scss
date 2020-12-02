@@ -285,7 +285,7 @@
         width: 100vw;
         height: 100vh;
         background-color: black;
-        overflow-x: hidden;
+        overflow-y: auto;
 
         .photo {
             display: inline-flex;
@@ -301,6 +301,129 @@
                 padding-left: 5vw;
                 padding-top: 2vh;
                 font-size: 10vh;
+            }
+        }
+
+        .fairmadeBlock{
+            display: block;
+            .fairmadeImage{
+                .fairmade{
+                    top: 60vh;
+                    height: 35vh;
+                }
+                .fairmadeSquare{
+                    top: 63vh;
+                    height: 35vh;
+                    width: 35vh;
+                }
+            }
+            .fairmadeText{
+                .fairmadeTitle{
+                    margin-top: 8vh;
+                    font-size: 6.5vh;
+                }
+                .fairmadeExp{
+                    margin-top: 2vh;
+                    font-size: 1.3rem;
+                    width: 80vw;
+                }
+                a{
+                    top: 0vh;
+                    font-size: 4vh;
+                    left: 45vw;
+                }
+            }
+        }
+        .twitterBlock{
+            margin-top: -10vh;
+            display: block;
+            .twitterImage{
+                .twitter{
+                    top: 171vh;
+                    height: 35vh;
+                }
+                .twitterSquare{
+                    top: 168vh;
+                    height: 35vh;
+                    width: 35vh;
+                }
+            }
+            .twitterText{
+                .twitterTitle{
+                    margin-top: 8vh;
+                    width: 90vw;
+                    font-size: 6.5vh;
+                }
+                .twitterExp{
+                    margin-top: 2vh;
+                    font-size: 1.3rem;
+                    width: 80vw;
+                }
+                a{
+                    top: 0vh;
+                    font-size: 4vh;
+                    left: 30vw;
+                }
+            }
+        }
+        .weatherBlock{
+            margin-top: 8vh;
+            display: block;
+            .weatherImage{
+                .weather{
+                    top: 285vh;
+                    height: 35vh;
+                }
+                .weatherSquare{
+                    top: 288vh;
+                    height: 35vh;
+                    width: 35vh;
+                }
+            }
+            .weatherText{
+                .weatherTitle{
+                    width: 90vw;
+                    margin-top: 8vh;
+                    font-size: 6.5vh;
+                }
+                .weatherExp{
+                    margin-top: 2vh;
+                    font-size: 1.3rem;
+                    width: 80vw;
+                }
+                a{
+                    top: 0vh;
+                    font-size: 4vh;
+                    left: 38vw;
+                }
+            }
+        }
+        .recipeBlock{
+            margin-top: 15vh;
+            display: block;
+            .recipeImage{
+                .recipe{
+                    top: 400vh;
+                    height: 35vh;
+                }
+                .recipeSquare{
+                    top: 403vh;
+                    height: 35vh;
+                    width: 35vh;
+                }
+            }
+            .recipeText{
+                .recipeTitle{
+                    margin-top: 8vh;
+                    font-size: 6.5vh;
+                    width: 90vw;
+                }
+                .recipeExp{
+                    margin-top: 2vh;
+                    font-size: 1.3rem;
+                    width: 80vw;
+                }
+                
             }
         }
     }
