@@ -1,16 +1,110 @@
-import React from 'react';
+import React, { useEffect} from 'react';
+import { gsap} from 'gsap';
 import './Projects.css';
-import random from '../../images/random.png'
-import todo from '../../images/todo.png'
 import recipe from '../../images/recipe.png'
 import weather from '../../images/weather.png'
 import twitter from '../../images/twitter.png'
 import fairmade from '../../images/fairmade.png'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+gsap.registerPlugin(ScrollTrigger);
 
 
 const Projects = () => {
 
+    
 
+    useEffect(() => {
+        gsap.to(".fairmade",{
+            scrollTrigger: {
+                trigger :'.bandeau',
+                start: 'top 10%',
+                end : '+=3000px',
+                scrub: true
+            },
+            y: 100 ,
+            x: 100
+        
+        })
+        gsap.to(".fairmadeSquare",{
+            scrollTrigger: {
+                trigger :'.bandeau',
+                start: 'top 10%',
+                end : '+=3000px',
+                scrub: true
+            },
+            y: -100 ,
+            x: -100
+        
+        })
+        gsap.to(".twitter",{
+            scrollTrigger: {
+                trigger :'.bandeau',
+                start: 'top 10%',
+                end : '+=3000px',
+                scrub: true
+            },
+            y: -100 ,
+            x: -100
+        
+        })
+        gsap.to(".twitterSquare",{
+            scrollTrigger: {
+                trigger :'.bandeau',
+                start: 'top 10%',
+                end : '+=3000px',
+                scrub: true
+            },
+            y: 100 ,
+            x: 100
+        
+        })
+        gsap.to(".weather",{
+            scrollTrigger: {
+                trigger :'.twitter',
+                start: 'top center',
+                end : '+=3000px',
+                scrub: true
+            },
+            y: 100 ,
+            x: 100
+        
+        })
+        gsap.to(".weatherSquare",{
+            scrollTrigger: {
+                trigger :'.twitter',
+                start: 'top center',
+                end : '+=3000px',
+                scrub: true
+            },
+            y: -100 ,
+            x: -100
+        
+        })
+        gsap.to(".recipe",{
+            scrollTrigger: {
+                trigger :'.weather',
+                start: 'top center',
+                end : '+=3000px',
+                scrub: true
+            },
+            y: -100 ,
+            x: -100
+        
+        })
+        gsap.to(".recipeSquare",{
+            scrollTrigger: {
+                trigger :'.weather',
+                start: 'top center',
+                end : '+=3000px',
+                scrub: true
+            },
+            y: 100 ,
+            x: 100
+        
+        })
+        }, [])
+
+   
 
 
     return (
@@ -25,7 +119,7 @@ const Projects = () => {
                 <span class="photo02">PROJECTS</span>
                 <span class="photo01">PROJECTS</span>
                 <span class="photo02">PROJECTS</span>
-
+ 
             </div>
 
         <div className="fairmadeBlock">
