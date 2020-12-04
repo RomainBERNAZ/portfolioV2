@@ -325,11 +325,13 @@
 
 @media screen and (max-width: 890px) {
   .bandeau {
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
     position: absolute;
     top: 100vh;
     width: 100vw;
     background-color: black;
-    overflow-y: initial;
   }
   .bandeau .photo {
     display: -webkit-inline-box;
