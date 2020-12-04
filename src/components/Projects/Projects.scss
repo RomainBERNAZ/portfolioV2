@@ -261,7 +261,6 @@
             line-height: 5vh;
         }
         a{
-            display: none;
             position: relative;
             top: 7vh;
             text-decoration: none;
@@ -397,6 +396,8 @@
             }
         }
         .recipeBlock{
+            padding-bottom: 20vh;
+
             margin-top: 15vh;
             display: block;
             .recipeImage{

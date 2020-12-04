@@ -309,7 +309,6 @@
 }
 
 .recipeBlock .recipeText a {
-  display: none;
   position: relative;
   top: 7vh;
   text-decoration: none;
@@ -433,6 +432,7 @@
     left: 38vw;
   }
   .bandeau .recipeBlock {
+    padding-bottom: 20vh;
     margin-top: 15vh;
     display: block;
   }

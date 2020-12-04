@@ -38,8 +38,8 @@ const Projects = () => {
         })
         gsap.to(".twitter",{
             scrollTrigger: {
-                trigger :'.bandeau',
-                start: 'top 10%',
+                trigger :'.fairmade',
+                start: 'top bottom',
                 end : '+=3000px',
                 scrub: true
             },
@@ -49,8 +49,8 @@ const Projects = () => {
         })
         gsap.to(".twitterSquare",{
             scrollTrigger: {
-                trigger :'.bandeau',
-                start: 'top 10%',
+                trigger :'.fairmade',
+                start: 'top bottom',
                 end : '+=3000px',
                 scrub: true
             },
@@ -184,11 +184,10 @@ const Projects = () => {
                         Création de compte et login / Déconnexion<br/>
                         Création / Suppression de recette<br/>
                         Gestion des routes utilisateurs <br/>
-                        Code sur GitHub / En ligne prochainement <br/>
                         REACT / SASS / STRAPI / AXIOS
                         
                     </div>
-                    <a href="https://www.fairmade.fr"> <i  class="fas fa-arrow-right"></i></a>
+                    <a href="https://romain-bernaz-portfolio.herokuapp.com/"> <i  class="fas fa-arrow-right"></i></a>
                 </div>
                 <div className="recipeImage">
                     <img src={recipe} alt="" className="recipe"/>
