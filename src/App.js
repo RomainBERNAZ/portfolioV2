@@ -14,9 +14,9 @@ function App() {
     <Router>
       <div className="App">
           <Cursor />
-          <Route component={Homepage} path="/PortfolioV2" exact/>
-          <Route component={Projects} path="/PortfolioV2" exact/>
-          <Route component={Photographs} path="/PortfolioV2/photographs" exact/>
+          <Route component={Homepage} path="/" exact/>
+          <Route component={Projects} path="/" exact/>
+          <Route component={Photographs} path="/photographs" exact/>
       </div>
     </Router>
   );
