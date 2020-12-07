@@ -11,114 +11,215 @@ gsap.registerPlugin(ScrollTrigger);
 
 const Projects = () => {
 
-    
 
     useEffect(() => {
-        gsap.to(".fairmade",{
-            scrollTrigger: {
-                trigger :'.bandeau',
-                start: 'top 10%',
-                end : '+=3000px',
-                scrub: true
-            },
-            y: 100 ,
-            x: 100
-        
-        })
-        gsap.to(".fairmadeSquare",{
-            scrollTrigger: {
-                trigger :'.bandeau',
-                start: 'top 10%',
-                end : '+=3000px',
-                scrub: true
-            },
-            y: -100 ,
-            x: -100
-        
-        })
-        gsap.to(".twitter",{
-            scrollTrigger: {
-                trigger :'.fairmade',
-                start: 'top bottom',
-                end : '+=3000px',
-                scrub: true
-            },
-            y: -100 ,
-            x: -100
-        
-        })
-        gsap.to(".twitterSquare",{
-            scrollTrigger: {
-                trigger :'.fairmade',
-                start: 'top bottom',
-                end : '+=3000px',
-                scrub: true
-            },
-            y: 100 ,
-            x: 100
-        
-        })
-        gsap.to(".weather",{
-            scrollTrigger: {
-                trigger :'.twitter',
-                start: 'top center',
-                end : '+=3000px',
-                scrub: true
-            },
-            y: 100 ,
-            x: 100
-        
-        })
-        gsap.to(".weatherSquare",{
-            scrollTrigger: {
-                trigger :'.twitter',
-                start: 'top center',
-                end : '+=3000px',
-                scrub: true
-            },
-            y: -100 ,
-            x: -100
-        
-        })
-        gsap.to(".recipe",{
-            scrollTrigger: {
-                trigger :'.weather',
-                start: 'top center',
-                end : '+=3000px',
-                scrub: true
-            },
-            y: -100 ,
-            x: -100
-        
-        })
-        gsap.to(".recipeSquare",{
-            scrollTrigger: {
-                trigger :'.weather',
-                start: 'top center',
-                end : '+=3000px',
-                scrub: true
-            },
-            y: 100 ,
-            x: 100
-        
-        })
+
+        var mql = window.matchMedia('(max-width: 600px)');
+    
+        if (mql.matches) {
+      /* pour la version mobile */
+
+      gsap.to(".fairmade",{
+        scrollTrigger: {
+            trigger :'.bandeau',
+            start: 'top 10%',
+            end : '+=3000px',
+            scrub: true
+        },
+        y: 100 ,
+        x: 100
+    
+    })
+    gsap.to(".fairmadeSquare",{
+        scrollTrigger: {
+            trigger :'.bandeau',
+            start: 'top 10%',
+            end : '+=3000px',
+            scrub: true
+        },
+        y: -100 ,
+        x: -100
+    
+    })
+    gsap.to(".twitter",{
+        scrollTrigger: {
+            trigger :'.twitterTitle',
+            start: 'top center',
+            end : '+=3000px',
+            scrub: true
+        },
+        y: -100 ,
+        x: -100
+    
+    })
+    gsap.to(".twitterSquare",{
+        scrollTrigger: {
+            trigger :'.twitterTitle',
+            start: 'top center',
+            end : '+=3000px',
+            scrub: true
+        },
+        y: 100 ,
+        x: 100
+    
+    })
+    gsap.to(".weather",{
+        scrollTrigger: {
+            trigger :'.weatherTitle',
+            start: 'top center',
+            end : '+=3000px',
+            scrub: true
+        },
+        y: 100 ,
+        x: 100
+    
+    })
+    gsap.to(".weatherSquare",{
+        scrollTrigger: {
+            trigger :'.weatherTitle',
+            start: 'top center',
+            end : '+=3000px',
+            scrub: true
+        },
+        y: -100 ,
+        x: -100
+    
+    })
+    gsap.to(".recipe",{
+        scrollTrigger: {
+            trigger :'.recipeTitle',
+            start: 'top center',
+            end : '+=3000px',
+            scrub: true
+        },
+        y: -100 ,
+        x: -100
+    
+    })
+    gsap.to(".recipeSquare",{
+        scrollTrigger: {
+            trigger :'.recipeTitle',
+            start: 'top center',
+            end : '+=3000px',
+            scrub: true
+        },
+        y: 100 ,
+        x: 100
+    
+    })
+
+
+    } else {
+      /* pour la version desktop */
+
+      gsap.to(".fairmade",{
+        scrollTrigger: {
+            trigger :'.bandeau',
+            start: 'top 10%',
+            end : '+=3000px',
+            scrub: true
+        },
+        y: 100 ,
+        x: 100
+    
+    })
+    gsap.to(".fairmadeSquare",{
+        scrollTrigger: {
+            trigger :'.bandeau',
+            start: 'top 10%',
+            end : '+=3000px',
+            scrub: true
+        },
+        y: -100 ,
+        x: -100
+    
+    })
+    gsap.to(".twitter",{
+        scrollTrigger: {
+            trigger :'.fairmade',
+            start: 'top 10%',
+            end : '+=3000px',
+            scrub: true
+        },
+        y: -100 ,
+        x: -100
+    
+    })
+    gsap.to(".twitterSquare",{
+        scrollTrigger: {
+            trigger :'.fairmade',
+            start: 'top 10%',
+            end : '+=3000px',
+            scrub: true
+        },
+        y: 100 ,
+        x: 100
+    
+    })
+    gsap.to(".weather",{
+        scrollTrigger: {
+            trigger :'.twitter',
+            start: 'top center',
+            end : '+=3000px',
+            scrub: true
+        },
+        y: 100 ,
+        x: 100
+    
+    })
+    gsap.to(".weatherSquare",{
+        scrollTrigger: {
+            trigger :'.twitter',
+            start: 'top center',
+            end : '+=3000px',
+            scrub: true
+        },
+        y: -100 ,
+        x: -100
+    
+    })
+    gsap.to(".recipe",{
+        scrollTrigger: {
+            trigger :'.weather',
+            start: 'top center',
+            end : '+=3000px',
+            scrub: true
+        },
+        y: -100 ,
+        x: -100
+    
+    })
+    gsap.to(".recipeSquare",{
+        scrollTrigger: {
+            trigger :'.weather',
+            start: 'top center',
+            end : '+=3000px',
+            scrub: true
+        },
+        y: 100 ,
+        x: 100
+    
+    })
+
+    }
+ 
         }, [])
 
    
 
 
     return (
-        <div class="bandeau">
+        <div className="bandeau">
             <div className="cursor"></div>
-            <div class="photo">
-                <span class="photo01">PROJECTS</span>
-                <span class="photo02">PROJECTS</span>
-                <span class="photo01">PROJECTS</span>
-                <span class="photo02">PROJECTS</span>
-                <span class="photo01">PROJECTS</span>
-                <span class="photo02">PROJECTS</span>
-                <span class="photo01">PROJECTS</span>
-                <span class="photo02">PROJECTS</span>
+            <div className="photo">
+                <span className="photo01">PROJECTS</span>
+                <span className="photo02">PROJECTS</span>
+                <span className="photo01">PROJECTS</span>
+                <span className="photo02">PROJECTS</span>
+                <span className="photo01">PROJECTS</span>
+                <span className="photo02">PROJECTS</span>
+                <span className="photo01">PROJECTS</span>
+                <span className="photo02">PROJECTS</span>
  
             </div>
 
@@ -135,7 +236,7 @@ const Projects = () => {
                         Accompagnement client complet <br/>
                         CSS personnalisé <br/>
                     </div>
-                <a target="_blank" href="https://www.fairmade.fr"> <i  class="fas fa-arrow-right"></i></a>
+                <a target="_blank" href="https://www.fairmade.fr"> <i  className="fas fa-arrow-right"></i></a>
                 </div>
         </div>
 
@@ -149,7 +250,7 @@ const Projects = () => {
                         NODE JS
                         
                     </div>
-                    <a target="_blank" href="https://twitter.com/ParkNantesBot"> <i  class="fas fa-arrow-right"></i></a>
+                    <a target="_blank" href="https://twitter.com/ParkNantesBot"> <i  className="fas fa-arrow-right"></i></a>
                 </div>
                 <div className="twitterImage">
                     <img src={twitter} alt="" className="twitter"/>
@@ -172,7 +273,7 @@ const Projects = () => {
                         HTML / CSS / REACT 
                         
                     </div>
-                    <a target="_blank" href="https://romainbernaz.github.io/weatherApp/"> <i  class="fas fa-arrow-right"></i></a>
+                    <a target="_blank" href="https://romainbernaz.github.io/weatherApp/"> <i  className="fas fa-arrow-right"></i></a>
                 </div>
         </div>
 
@@ -187,7 +288,7 @@ const Projects = () => {
                         REACT / SASS / STRAPI / AXIOS
                         
                     </div>
-                    <a href="https://romain-bernaz-portfolio.herokuapp.com/"> <i  class="fas fa-arrow-right"></i></a>
+                    <a href="https://romain-bernaz-portfolio.herokuapp.com/"> <i  className="fas fa-arrow-right"></i></a>
                 </div>
                 <div className="recipeImage">
                     <img src={recipe} alt="" className="recipe"/>

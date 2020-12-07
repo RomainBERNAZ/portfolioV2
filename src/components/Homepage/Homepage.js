@@ -41,16 +41,16 @@ const Homepage = () => {
 
 
     return (
-        <div class="menu">
+        <div className="menu">
             
-        <div class="name">
-            <h2 className="surname"> <span class="firstLetter">R</span>OMAIN</h2>
-            <h2 className="lastname">BERNA<span class="firstLetter">Z</span></h2>
+        <div className="name">
+            <h2 className="surname"> <span className="firstLetter">R</span>OMAIN</h2>
+            <h2 className="lastname">BERNA<span className="firstLetter">Z</span></h2>
         </div>
 
         <div className="navbar">
             <div className="hamburger">
-                <i class="fas fa-4x fa-bars"></i>
+                <i className="fas fa-4x fa-bars"></i>
             </div>
             <ul className="nav">
                 <li className="projects">Projets</li>
@@ -60,10 +60,10 @@ const Homepage = () => {
 
         </div>
 
-        <div class="title">
-            <h3 ref={el => {webDev = el}} id="webDev" class="webDev">WEB DEVELOPER </h3>
-            <h3 ref={el => {design = el}} id="design" class="design">DESIGN ENTHOUSIAST </h3>
-            <h4 ref={el => {city = el}} id="city" class="city">NANTES FR</h4>
+        <div className="title">
+            <h3 ref={el => {webDev = el}} id="webDev" className="webDev">WEB DEVELOPER </h3>
+            <h3 ref={el => {design = el}} id="design" className="design">DESIGN ENTHOUSIAST </h3>
+            <h4 ref={el => {city = el}} id="city" className="city">NANTES FR</h4>
         </div>
         <script src="./Homepage.js"></script>
     </div>
