@@ -36,15 +36,18 @@
 }
 
 .menu .navbar .hamburger {
-  display: none;
   position: absolute;
   right: 5vw;
   top: 5vh;
 }
 
+.menu .navbar .hamburger a {
+  list-style: none;
+  color: black;
+}
+
 .menu .navbar .nav {
   list-style: none;
-  display: none;
 }
 
 .menu .navbar .nav li {

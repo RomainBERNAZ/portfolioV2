@@ -50,7 +50,7 @@ const Homepage = () => {
 
         <div className="navbar">
             <div className="hamburger">
-                <i className="fas fa-4x fa-bars"></i>
+                <a href="https://romain-bernaz-portfolio.herokuapp.com/photographs" target="_blank" ><i className="fas fa-4x fa-bars"></i></a>
             </div>
             <ul className="nav">
                 <li className="projects">Projets</li>

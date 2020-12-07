@@ -1,0 +1,380 @@
+.container-photograph {
+    background-color: #A49C9B;
+    height: 700vh;
+    width: 100%;
+
+    .black-start {
+        height: 100%;
+        width: 100%;
+        background-color: black;
+        position: absolute;
+        z-index: 50;
+        overflow-x: hidden !important;
+
+
+        h2 {
+            width: 100%;
+            transform: translateY(-50%);
+            position: absolute;
+            top: 50vh;
+            line-height: 4.2rem;
+            font-size: 7rem;
+
+            .line {
+                margin-left: 4vw;
+                position: relative;
+                overflow: hidden;
+                margin-bottom: -2.5vh;
+                padding-top: 2vh;
+                height: 130px;
+
+                span {
+                    font-family: Champagne;
+                    font-weight: 300;
+                    position: absolute;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    color: white;
+                    display: block;
+                }
+            }
+        }
+    }
+
+    .main-title {
+        height: 45vh;
+
+        h3 {
+            color: black;
+            font-family: Morganite;
+            font-size: 40vh;
+            margin-left: 5vw;
+            padding-top: 5vh;
+
+            span {
+                color: white;
+            }
+        }
+
+    }
+
+
+    .photograph-text-intro {
+        height: 45vh;
+        width: 100vw;
+
+        .photograph-text {
+            margin-top: 20vh;
+            position: relative;
+            left: 50vw;
+            color: whitesmoke;
+            text-align: justify;
+            font-family: Champagne;
+            font-size: 3.7vh;
+            font-weight: 600;
+            line-height: 7vh;
+        }
+    }
+
+    .photographs {
+        .londonCity {
+            width: 85vw;
+            text-align: end;
+
+            .london {
+                position: relative;
+                height: 55vh;
+            }
+
+            p {
+                position: relative;
+                color: white;
+                font-size: 4vh;
+                font-weight: 100;
+                letter-spacing: 0.3vw;
+                font-family: Morganite;
+            }
+        }
+
+        .londonBridge {
+            padding-top: 35vh;
+            margin-left: 10vw;
+            width: 85vw;
+            text-align: start;
+
+            .bridge {
+                position: relative;
+                height: 65vh;
+            }
+
+            p {
+                position: relative;
+                color: white;
+                font-size: 4vh;
+                font-weight: 100;
+                letter-spacing: 0.3vw;
+                font-family: Morganite;
+            }
+        }
+
+        .londonShop {
+            padding-top: 35vh;
+            width: 85vw;
+            text-align: end;
+
+            .shop {
+                position: relative;
+                height: 65vh;
+            }
+
+            p {
+                position: relative;
+                color: white;
+                font-size: 4vh;
+                font-weight: 100;
+                letter-spacing: 0.3vw;
+                font-family: Morganite;
+            }
+
+
+        }
+        .judStreet {
+            padding-top: 35vh;
+            width: 85vw;
+            margin-left: 10vw;
+
+            text-align: start;
+
+            .jude {
+                position: relative;
+                height: 65vh;
+            }
+
+            p {
+                position: relative;
+                color: white;
+                font-size: 4vh;
+                font-weight: 100;
+                letter-spacing: 0.3vw;
+                font-family: Morganite;
+            }
+
+
+        }
+        .titre-divers{
+            height: 45vh;
+
+        h3 {
+            color: white;
+            font-family: Morganite;
+            font-size: 40vh;
+            margin-left: 5vw;
+            padding-top: 20vh;
+
+            span {
+                color: black;
+            }
+        }
+
+        }
+        .photographs-divers{
+            width: 90vw;
+            display: grid;
+            grid-template-columns: 33% 33% 33%;
+        }
+
+    }
+}
+@media screen and (max-width: 890px) {
+
+    .container-photograph {
+        background-color: #A49C9B;
+        height: 700vh;
+        width: 100%;
+    
+        .black-start {
+            height: 100%;
+            width: 100%;
+            background-color: black;
+            position: absolute;
+            z-index: 50;
+            overflow-x: hidden !important;
+    
+    
+            h2 {
+                width: 100%;
+                transform: translateY(-50%);
+                position: absolute;
+                top: 50vh;
+                line-height: 4.2rem;
+                font-size: 3.8rem;
+    
+                .line {
+                    margin-left: 4vw;
+                    position: relative;
+                    overflow: hidden;
+                    margin-bottom: -2.5vh;
+                    padding-top: 2vh;
+                    height: 130px;
+    
+                    span {
+                        font-family: Champagne;
+                        font-weight: 300;
+                        position: absolute;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        color: white;
+                        display: block;
+                    }
+                }
+            }
+        }
+    
+        .main-title {
+            padding-top: 10vh;
+            height: 50vh;
+    
+            h3 {
+                color: black;
+                font-family: Morganite;
+                font-size: 15vh;
+                padding-top: 7vh;
+                margin-left: 2vw;
+    
+                span {
+                    color: white;
+                }
+            }
+    
+        }
+    
+    
+        .photograph-text-intro {
+            height: 60vh;
+            width: 100vw;
+    
+            .photograph-text {
+                margin-top: 0vh;
+                position: relative;
+                margin-left: 2vw;
+                left: 0vw;
+                color: whitesmoke;
+                text-align: justify;
+                font-family: Champagne;
+                font-size: 2vh;
+                font-weight: 600;
+                line-height: 3vh;
+            }
+        }
+    
+        .photographs {
+            .londonCity {
+                width: 85vw;
+                text-align: end;
+    
+                .london {
+                    position: relative;
+                    height: 15vh;
+                }
+    
+                p {
+                    position: relative;
+                    color: white;
+                    font-size: 4vh;
+                    font-weight: 100;
+                    letter-spacing: 0.3vw;
+                    font-family: Morganite;
+                }
+            }
+    
+            .londonBridge {
+                padding-top: 10vh;
+                margin-left: 10vw;
+                width: 85vw;
+                text-align: start;
+    
+                .bridge {
+                    position: relative;
+                    height: 15vh;
+                }
+    
+                p {
+                    position: relative;
+                    color: white;
+                    font-size: 4vh;
+                    font-weight: 100;
+                    letter-spacing: 0.3vw;
+                    font-family: Morganite;
+                }
+            }
+    
+            .londonShop {
+                padding-top: 10vh;
+                width: 85vw;
+                text-align: end;
+    
+                .shop {
+                    position: relative;
+                    height: 15vh;
+                }
+    
+                p {
+                    position: relative;
+                    color: white;
+                    font-size: 4vh;
+                    font-weight: 100;
+                    letter-spacing: 0.3vw;
+                    font-family: Morganite;
+                }
+    
+    
+            }
+            .judStreet {
+                padding-top: 10vh;
+                width: 85vw;
+                margin-left: 10vw;
+    
+                text-align: start;
+    
+                .jude {
+                    position: relative;
+                    height: 15vh;
+                }
+    
+                p {
+                    position: relative;
+                    color: white;
+                    font-size: 4vh;
+                    font-weight: 100;
+                    letter-spacing: 0.3vw;
+                    font-family: Morganite;
+                }
+    
+    
+            }
+            .titre-divers{
+                height: 45vh;
+    
+            h3 {
+                color: white;
+                font-family: Morganite;
+                font-size: 20vh;
+                margin-left: 5vw;
+                padding-top: 20vh;
+    
+                span {
+                    color: black;
+                }
+            }
+    
+            }
+            .photographs-divers{
+                width: 90vw;
+                display: grid;
+                grid-template-columns: 33% 33% 33%;
+            }
+    
+        }
+    }
+
+}

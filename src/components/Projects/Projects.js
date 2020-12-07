@@ -14,6 +14,7 @@ const Projects = () => {
 
     useEffect(() => {
 
+        // Paramètre qui permet de vérifier si l'utilisateur est sur mobile. 
         var mql = window.matchMedia('(max-width: 600px)');
     
         if (mql.matches) {

@@ -34,17 +34,17 @@
 
     .navbar{
         .hamburger{
-            display: none;
             position: absolute;
             right: 5vw;
             top: 5vh;
-           
-
+            a{
+                list-style: none;
+                color: black;
+            }
         }
         
         .nav{
             list-style: none;
-            display: none;
             li{
                 color: black;
                 font-family: Morganite4;
