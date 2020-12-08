@@ -289,7 +289,7 @@ const Projects = () => {
                         REACT / SASS / STRAPI / AXIOS
                         
                     </div>
-                    <a href="https://romain-bernaz-portfolio.herokuapp.com/"> <i  className="fas fa-arrow-right"></i></a>
+                    <a href="https://react-recipe-app-strapi.herokuapp.com/"> <i  className="fas fa-arrow-right"></i></a>
                 </div>
                 <div className="recipeImage">
                     <img src={recipe} alt="" className="recipe"/>

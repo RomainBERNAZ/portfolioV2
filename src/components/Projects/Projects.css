@@ -309,13 +309,8 @@
 }
 
 .recipeBlock .recipeText a {
-  position: relative;
-  top: 7vh;
-  text-decoration: none;
-  color: silver;
-  padding-left: 37vw;
-  margin-top: 5vh !important;
-  font-size: 3.5rem;
+  top: 0vh;
+  font-size: 4vh;
 }
 
 .recipeBlock .recipeText a:hover {
@@ -454,6 +449,14 @@
     margin-top: 2vh;
     font-size: 1.3rem;
     width: 80vw;
+  }
+  .bandeau .recipeBlock .recipeText a {
+    top: 0vh;
+    font-size: 4vh;
+    left: 30vw;
+  }
+  .bandeau .recipeBlock .recipeText a:hover {
+    color: grey;
   }
 }
 /*# sourceMappingURL=Projects.css.map */
