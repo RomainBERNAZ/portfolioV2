@@ -1,0 +1,92 @@
+// Affichage du menu en haut à gauche
+.navbar{
+    position: absolute;
+    z-index: 5000;
+    right: 2.5vw;
+    top: 4vh;
+    .navbar-lines{
+        transform: rotate(90deg);
+        display: inline-flex;
+        justify-content: space-around;
+        text-decoration: none;
+        list-style: none;            
+        .line-1{
+            margin-right: 0.3vw;
+            height: 50px;
+            width: 10px;
+            background-color: black;
+            
+        }
+        
+        .line-2{
+            margin-right: 0.3vw;
+            height: 50px;
+            width: 10px;
+            background-color: black;
+            &:hover{
+                background-color: white;
+            }
+        }
+        .line-3{
+            margin-right: 0.3vw;
+            height: 50px;
+            width: 10px;
+            background-color: black;
+        }
+    }
+}
+//Affichage des différentes catégories du menu quand clic 
+.navbar-menu{
+    z-index: 5000;
+    display: none;
+    position: absolute;
+    top: 5vh;
+    right:-3vw;
+    color: white;
+    transform: rotate(90deg);
+    .navbar-lines{
+        list-style: none;
+        text-decoration: none;
+        .line-one{
+            padding-top: 0.7vh;
+            font-family: Champagne;
+            margin-top: 2vh;
+            letter-spacing: 0.5vw;
+            padding-left: 2vw;
+            font-size: 3vh;
+            height: 50px;
+            width: 270px;
+            color: white;
+            background-color: black;
+        }
+        .line-two{
+            padding-top: 0.7vh;
+            font-family: Champagne;
+            margin-top: 2vh;
+            letter-spacing: 0.5vw;
+            padding-left: 2vw;
+            font-size: 3vh;
+            height: 50px;
+            width: 215px;
+            color: white;
+            background-color: black;
+        }
+        a{
+            text-decoration: none;
+            .line-three{
+                padding-top: 0.7vh;
+                margin-top: 2vh;
+                font-family: Champagne;
+                letter-spacing: 0.5vw;
+                padding-left: 2vw;
+                font-size: 3vh;
+                height: 50px;
+                width: 320px;
+                color: white;
+                background-color: black;
+            }
+
+        }
+        
+    }
+}

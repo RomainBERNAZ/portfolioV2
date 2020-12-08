@@ -35,24 +35,7 @@
   color: whitesmoke;
 }
 
-.menu .navbar .hamburger {
-  position: absolute;
-  right: 5vw;
-  top: 5vh;
-}
 
-.menu .navbar .nav {
-  list-style: none;
-  display: none;
-}
-
-.menu .navbar .nav li {
-  color: black;
-  font-family: Morganite4;
-  font-size: 2rem;
-  letter-spacing: 0.5rem;
-  line-height: rem;
-}
 
 .menu .title {
   -webkit-animation: 2s linear;

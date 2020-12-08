@@ -210,7 +210,7 @@ const Projects = () => {
 
 
     return (
-        <div className="bandeau">
+        <div id="bandeau" className="bandeau">
             <div className="cursor"></div>
             <div className="photo">
                 <span className="photo01">PROJECTS</span>
@@ -289,7 +289,7 @@ const Projects = () => {
                         REACT / SASS / STRAPI / AXIOS
                         
                     </div>
-                    <a href="https://react-recipe-app-strapi.herokuapp.com/"> <i  className="fas fa-arrow-right"></i></a>
+                    <a target="_blank" href="https://react-recipe-app-strapi.herokuapp.com/"> <i  className="fas fa-arrow-right"></i></a>
                 </div>
                 <div className="recipeImage">
                     <img src={recipe} alt="" className="recipe"/>

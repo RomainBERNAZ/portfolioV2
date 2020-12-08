@@ -32,31 +32,6 @@
 
     }
 
-    .navbar{
-        .hamburger{
-            position: absolute;
-            right: 5vw;
-            top: 5vh;
-            a{
-                list-style: none;
-                color: black;
-            }
-        }
-         
-        .nav{
-            list-style: none;
-            li{
-                color: black;
-                font-family: Morganite4;
-                font-size: 2rem;
-                letter-spacing: 0.5rem;
-                line-height: rem;
-                
-
-            }
-        }
-    }
-
     .title {
         animation: 2s linear;
         animation-fill-mode: forwards;
