@@ -186,6 +186,9 @@
 }
 @media screen and (max-width: 890px) {
 
+    body{
+        overflow-x: hidden;
+    }
     .container-photograph {
         box-sizing: border-box;
         background-color: #A49C9B;
@@ -196,9 +199,7 @@
             height: 100%;
             width: 100vw;
             background-color: black;
-            position: absolute;
-            z-index: 50;
-    
+            position: relative;
     
             h2 {
                 width: 100vw;
@@ -229,7 +230,13 @@
                 }
             }
         }
-    
+    .div-photo{
+
+        width: 100vw;
+        height: max-content;
+        position: absolute;
+        top: 0vh;
+
         .main-title {
             padding-top: 13vh;
             height: 50vh;
@@ -389,5 +396,6 @@
     
         }
     }
+}
 
 }

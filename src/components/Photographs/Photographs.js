@@ -21,13 +21,22 @@ const Photographs = () => {
         var mql = window.matchMedia('(max-width: 600px)');
 
         
-        //Animation de la div noire au démarrage de la page.
-        gsap.to(blackStart, {
-            duration: 1.3,
-            delay:5.8,
-            x:2600,
-            ease: Power4.in
-        })
+        if (mql.matches) {
+            //Animation de la div noire au démarrage de la page.Mobile first
+            gsap.to(blackStart, {
+                duration: 1.3,
+                delay:5.8,
+                x:600,
+                ease: Power4.in
+            })}else{
+                gsap.to(blackStart, {
+                    duration: 1.3,
+                    delay:5.8,
+                    x:2600,
+                    ease: Power4.in
+                })
+    
+            }
 
 
         // Animation du titre au démarrage de la page.
@@ -167,6 +176,8 @@ const Photographs = () => {
                 </div>
             </h2>
             </div>
+            <div className="div-photo">
+        
         <div className="main-title">
             <h3><span>P</span>HOTOGRAPHS</h3>
         </div>
@@ -211,7 +222,7 @@ const Photographs = () => {
             </div>
 
         </div>
-
+        </div>
 
         </div>
     )
