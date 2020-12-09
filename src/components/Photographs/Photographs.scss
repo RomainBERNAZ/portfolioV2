@@ -1,6 +1,7 @@
 .container-photograph {
     background-color: #A49C9B;
     height: 700vh;
+    overflow-x: hidden;
     width: 100%;
 
     .black-start {
@@ -199,7 +200,6 @@
             background-color: black;
             position: absolute;
             z-index: 50;
-            overflow-x: hidden !important;
     
     
             h2 {

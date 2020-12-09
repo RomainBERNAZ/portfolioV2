@@ -1,5 +1,6 @@
 .container-about{
     background-color: #A49C9B;
+    overflow-x: hidden;
     height: 200vh;
     .black-start {
         height: 100%;
@@ -123,7 +124,6 @@
             background-color: black;
             position: absolute;
             z-index: 50;
-            overflow-x: hidden !important;
     
     
             h2 {
