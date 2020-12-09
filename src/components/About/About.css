@@ -130,6 +130,7 @@
     background-color: #A49C9B;
     overflow-x: hidden;
     height: 170vh;
+    width: 100vw;
   }
   .container-about .black-start {
     height: 100%;
