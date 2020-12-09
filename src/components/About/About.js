@@ -38,13 +38,22 @@ const About = () => {
             }
         })
         
-        //Animation de la div noire au démarrage de la page.
+        if (mql.matches) {
+        //Animation de la div noire au démarrage de la page.Mobile first
         gsap.to(blackStart, {
             duration: 1.3,
             delay:5.8,
-            x:2600,
+            x:600,
             ease: Power4.in
-        })
+        })}else{
+            gsap.to(blackStart, {
+                duration: 1.3,
+                delay:5.8,
+                x:2600,
+                ease: Power4.in
+            })
+
+        }
     })
 
     return (
@@ -56,6 +65,7 @@ const About = () => {
                 </div>
             </h2>
             </div>
+    <div className="div-about">
         <div className="main-title">
             <h3><span>A</span>BOUT ME</h3>
         </div> 
@@ -93,6 +103,7 @@ const About = () => {
        </div>
         
         </div>           
+        </div>
         </div>
     )
 }

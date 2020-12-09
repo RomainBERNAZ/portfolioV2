@@ -1,7 +1,6 @@
 .container-photograph {
   background-color: #A49C9B;
   height: 700vh;
-  overflow-x: hidden;
   width: 100vw;
 }
 
@@ -11,7 +10,6 @@
   background-color: black;
   position: absolute;
   z-index: 50;
-  overflow-x: hidden !important;
 }
 
 .container-photograph .black-start h2 {
@@ -188,8 +186,7 @@
             box-sizing: border-box;
     background-color: #A49C9B;
     height: 700vh;
-    width: 100vw;
-    overflow-x: hidden !important;
+    max-width: 100vw;
   }
   .container-photograph .black-start {
     height: 100%;
@@ -234,9 +231,9 @@
     color: black;
     font-family: Morganite;
     width: 100%;
-    font-size: 20vh;
-    text-align: start;
-    padding-left: 2vw;
+    font-size: 17vh;
+    text-align: center;
+    padding-left: 0vw;
     padding-top: 14vh;
     margin-left: 0vw;
   }

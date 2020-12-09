@@ -140,8 +140,7 @@
     height: 100%;
     width: 100vw;
     background-color: black;
-    position: absolute;
-    z-index: 50;
+    position: relative;
   }
   .container-about .black-start h2 {
     width: 100vw;
@@ -171,11 +170,19 @@
     color: white;
     display: block;
   }
-  .container-about .main-title {
+  .container-about .div-about {
+    width: 100vw;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    position: absolute;
+    top: 0vh;
+  }
+  .container-about .div-about .main-title {
     padding-top: 13vh;
     height: 50vh;
   }
-  .container-about .main-title h3 {
+  .container-about .div-about .main-title h3 {
     color: black;
     font-family: Morganite;
     font-size: 20vh;
@@ -184,59 +191,59 @@
     padding-top: 14vh;
     margin-left: 0vw;
   }
-  .container-about .main-title h3 span {
+  .container-about .div-about .main-title h3 span {
     color: white;
   }
-  .container-about .presentation {
+  .container-about .div-about .presentation {
     margin-top: -5vh;
     width: 100vw;
     display: block;
   }
-  .container-about .presentation .text-presentation {
+  .container-about .div-about .presentation .text-presentation {
     width: 100vw;
   }
-  .container-about .presentation .text-presentation p {
+  .container-about .div-about .presentation .text-presentation p {
     line-height: 5vh;
     margin-left: 2vw;
     font-size: 1.2em;
     font-family: Champagne;
   }
-  .container-about .presentation .text-presentation .contact {
+  .container-about .div-about .presentation .text-presentation .contact {
     margin-top: 5vh;
   }
-  .container-about .presentation .text-presentation .contact a {
+  .container-about .div-about .presentation .text-presentation .contact a {
     margin-left: 1vw;
   }
-  .container-about .presentation .text-presentation .contact a i {
+  .container-about .div-about .presentation .text-presentation .contact a i {
     width: 4vw;
     font-size: 3vh;
     color: black;
   }
-  .container-about .presentation .text-presentation .contact a i:hover {
+  .container-about .div-about .presentation .text-presentation .contact a i:hover {
     color: white;
   }
-  .container-about .presentation .text-presentation .liste {
+  .container-about .div-about .presentation .text-presentation .liste {
     margin-top: 5vh;
   }
-  .container-about .presentation .text-presentation .liste ul {
+  .container-about .div-about .presentation .text-presentation .liste ul {
     text-decoration: none;
     list-style: none;
     margin-left: 2vw;
   }
-  .container-about .presentation .text-presentation .liste a {
+  .container-about .div-about .presentation .text-presentation .liste a {
     list-style: none;
     text-decoration: none;
     color: black;
   }
-  .container-about .presentation .text-presentation .liste a:hover {
+  .container-about .div-about .presentation .text-presentation .liste a:hover {
     color: white;
   }
-  .container-about .presentation .image-presentation {
+  .container-about .div-about .presentation .image-presentation {
     width: 100vw;
     display: none;
     text-align: center;
   }
-  .container-about .presentation .image-presentation img {
+  .container-about .div-about .presentation .image-presentation img {
     margin-left: 5vw;
     height: 80vh;
   }

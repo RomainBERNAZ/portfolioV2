@@ -126,9 +126,7 @@
             height: 100%;
             width: 100vw;
             background-color: black;
-            position: absolute;
-            z-index: 50;
-    
+            position: relative;
     
             h2 {
                 width: 100vw;
@@ -159,6 +157,11 @@
                 }
             }
         }
+        .div-about{
+            width: 100vw;
+            height: max-content;
+            position: absolute;
+            top: 0vh;
         .main-title {
             padding-top: 13vh;
             height: 50vh;
@@ -236,5 +239,5 @@
     
         }
     }
-
+    }
 }
