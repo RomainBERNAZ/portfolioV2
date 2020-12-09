@@ -184,6 +184,8 @@
 
 @media screen and (max-width: 890px) {
   .container-photograph {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     background-color: #A49C9B;
     height: 700vh;
     width: 100vw;
@@ -197,7 +199,7 @@
     z-index: 50;
   }
   .container-photograph .black-start h2 {
-    width: 100%;
+    width: 100vw;
     -webkit-transform: translateY(-70%);
             transform: translateY(-70%);
     position: absolute;
@@ -231,6 +233,7 @@
   .container-photograph .main-title h3 {
     color: black;
     font-family: Morganite;
+    width: 100%;
     font-size: 20vh;
     text-align: start;
     padding-left: 2vw;
