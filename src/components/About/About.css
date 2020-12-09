@@ -1,7 +1,7 @@
 .container-about {
   background-color: #A49C9B;
   overflow-x: hidden;
-  height: 200vh;
+  height: 150vh;
 }
 
 .container-about .black-start {
@@ -127,6 +127,9 @@
 }
 
 @media screen and (max-width: 890px) {
+  body {
+    overflow-x: hidden;
+  }
   .container-about {
     background-color: #A49C9B;
     overflow-x: hidden;
