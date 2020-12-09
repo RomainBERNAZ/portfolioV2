@@ -79,8 +79,8 @@ const Photographs = () => {
         gsap.from('.londonShop',{
             scrollTrigger : {
                 trigger : '.bridge',
-                start :'top center',
-                end: "+=500px",
+                start :'top bottom',
+                end: "+=700px",
                 scrub: true
 
             },
