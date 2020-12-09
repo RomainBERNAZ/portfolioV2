@@ -2,12 +2,12 @@
   background-color: #A49C9B;
   height: 700vh;
   overflow-x: hidden;
-  width: 100%;
+  width: 100vw;
 }
 
 .container-photograph .black-start {
   height: 100%;
-  width: 100%;
+  width: 100vw;
   background-color: black;
   position: absolute;
   z-index: 50;
@@ -15,7 +15,7 @@
 }
 
 .container-photograph .black-start h2 {
-  width: 100%;
+  width: 100vw;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   position: absolute;
@@ -191,7 +191,7 @@
   }
   .container-photograph .black-start {
     height: 100%;
-    width: 100%;
+    width: 100vw;
     background-color: black;
     position: absolute;
     z-index: 50;

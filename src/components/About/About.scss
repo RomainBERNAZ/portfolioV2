@@ -4,7 +4,7 @@
     height: 200vh;
     .black-start {
         height: 100%;
-        width: 100%;
+        width: 100vw;
         background-color: black;
         position: absolute;
         z-index: 50;
@@ -12,7 +12,7 @@
 
 
         h2 {
-            width: 100%;
+            width: 100vw;
             transform: translateY(-50%);
             position: absolute;
             top: 50vh;
@@ -120,14 +120,14 @@
         width: 100vw;
         .black-start {
             height: 100%;
-            width: 100%;
+            width: 100vw;
             background-color: black;
             position: absolute;
             z-index: 50;
     
     
             h2 {
-                width: 100%;
+                width: 100vw;
                 transform: translateY(-70%);
                 position: absolute;
                 text-align: center;

@@ -6,7 +6,7 @@
 
 .container-about .black-start {
   height: 100%;
-  width: 100%;
+  width: 100vw;
   background-color: black;
   position: absolute;
   z-index: 50;
@@ -14,7 +14,7 @@
 }
 
 .container-about .black-start h2 {
-  width: 100%;
+  width: 100vw;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   position: absolute;
@@ -135,13 +135,13 @@
   }
   .container-about .black-start {
     height: 100%;
-    width: 100%;
+    width: 100vw;
     background-color: black;
     position: absolute;
     z-index: 50;
   }
   .container-about .black-start h2 {
-    width: 100%;
+    width: 100vw;
     -webkit-transform: translateY(-70%);
             transform: translateY(-70%);
     position: absolute;
