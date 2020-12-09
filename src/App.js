@@ -8,6 +8,7 @@ import Navbar from './components/Navbar/Navbar'
 import Projects from './components/Projects/Projects';
 import Cursor from './components/Cursor/Cursor'
 import Photographs from './components/Photographs/Photographs';
+import About from './components/About/About'
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
           <Navbar />
           <Route component={Homepage} path="/" exact/>
           <Route component={Projects} path="/" exact/>
+          <Route component={About} path='/about' exact />
           <Route component={Photographs} path="/photographs" exact/>
       </div>
     </Router>

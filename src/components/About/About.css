@@ -1,0 +1,240 @@
+.container-about {
+  background-color: #A49C9B;
+  height: 200vh;
+}
+
+.container-about .black-start {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  position: absolute;
+  z-index: 50;
+  overflow-x: hidden !important;
+}
+
+.container-about .black-start h2 {
+  width: 100%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  position: absolute;
+  top: 50vh;
+  line-height: 4.2rem;
+  font-size: 7rem;
+}
+
+.container-about .black-start h2 .line {
+  margin-left: 4vw;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: -2.5vh;
+  padding-top: 2vh;
+  height: 130px;
+}
+
+.container-about .black-start h2 .line span {
+  font-family: Champagne;
+  font-weight: 300;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  color: white;
+  display: block;
+}
+
+.container-about .main-title {
+  height: 45vh;
+}
+
+.container-about .main-title h3 {
+  color: black;
+  font-family: Morganite;
+  font-size: 40vh;
+  margin-left: 5vw;
+  padding-top: 5vh;
+}
+
+.container-about .main-title h3 span {
+  color: white;
+}
+
+.container-about .presentation {
+  margin-top: 15vh;
+  width: 100vw;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.container-about .presentation .text-presentation {
+  width: 50vw;
+}
+
+.container-about .presentation .text-presentation p {
+  line-height: 5vh;
+  margin-left: 5vw;
+  font-size: 2.4em;
+  font-family: Champagne;
+}
+
+.container-about .presentation .text-presentation .contact {
+  margin-top: 5vh;
+}
+
+.container-about .presentation .text-presentation .contact a {
+  margin-left: 1vw;
+}
+
+.container-about .presentation .text-presentation .contact a i {
+  width: 4vw;
+  font-size: 3vh;
+  color: black;
+}
+
+.container-about .presentation .text-presentation .contact a i:hover {
+  color: white;
+}
+
+.container-about .presentation .text-presentation .liste {
+  margin-top: 5vh;
+}
+
+.container-about .presentation .text-presentation .liste ul {
+  text-decoration: none;
+  list-style: none;
+  margin-left: 2vw;
+}
+
+.container-about .presentation .text-presentation .liste a {
+  list-style: none;
+  text-decoration: none;
+  color: black;
+}
+
+.container-about .presentation .text-presentation .liste a:hover {
+  color: white;
+}
+
+.container-about .presentation .image-presentation {
+  width: 50vw;
+  text-align: center;
+}
+
+.container-about .presentation .image-presentation img {
+  margin-left: 5vw;
+  height: 80vh;
+}
+
+@media screen and (max-width: 890px) {
+  .container-about {
+    background-color: #A49C9B;
+    overflow-x: hidden;
+    height: 170vh;
+  }
+  .container-about .black-start {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    z-index: 50;
+    overflow-x: hidden !important;
+  }
+  .container-about .black-start h2 {
+    width: 100%;
+    -webkit-transform: translateY(-70%);
+            transform: translateY(-70%);
+    position: absolute;
+    text-align: center;
+    top: 50vh;
+    line-height: 4.2rem;
+    font-size: 3.8rem;
+  }
+  .container-about .black-start h2 .line {
+    margin-left: 4vw;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: -2.5vh;
+    padding-top: 2vh;
+    height: 130px;
+  }
+  .container-about .black-start h2 .line span {
+    font-family: Champagne;
+    font-weight: 300;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    color: white;
+    display: block;
+  }
+  .container-about .main-title {
+    padding-top: 13vh;
+    height: 50vh;
+  }
+  .container-about .main-title h3 {
+    color: black;
+    font-family: Morganite;
+    font-size: 20vh;
+    text-align: start;
+    padding-left: 2vw;
+    padding-top: 14vh;
+    margin-left: 0vw;
+  }
+  .container-about .main-title h3 span {
+    color: white;
+  }
+  .container-about .presentation {
+    margin-top: -5vh;
+    width: 100vw;
+    display: block;
+  }
+  .container-about .presentation .text-presentation {
+    width: 100vw;
+  }
+  .container-about .presentation .text-presentation p {
+    line-height: 5vh;
+    margin-left: 2vw;
+    font-size: 1.2em;
+    font-family: Champagne;
+  }
+  .container-about .presentation .text-presentation .contact {
+    margin-top: 5vh;
+  }
+  .container-about .presentation .text-presentation .contact a {
+    margin-left: 1vw;
+  }
+  .container-about .presentation .text-presentation .contact a i {
+    width: 4vw;
+    font-size: 3vh;
+    color: black;
+  }
+  .container-about .presentation .text-presentation .contact a i:hover {
+    color: white;
+  }
+  .container-about .presentation .text-presentation .liste {
+    margin-top: 5vh;
+  }
+  .container-about .presentation .text-presentation .liste ul {
+    text-decoration: none;
+    list-style: none;
+    margin-left: 2vw;
+  }
+  .container-about .presentation .text-presentation .liste a {
+    list-style: none;
+    text-decoration: none;
+    color: black;
+  }
+  .container-about .presentation .text-presentation .liste a:hover {
+    color: white;
+  }
+  .container-about .presentation .image-presentation {
+    width: 100vw;
+    display: none;
+    text-align: center;
+  }
+  .container-about .presentation .image-presentation img {
+    margin-left: 5vw;
+    height: 80vh;
+  }
+}
+/*# sourceMappingURL=About.css.map */

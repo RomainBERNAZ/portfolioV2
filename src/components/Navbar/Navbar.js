@@ -91,7 +91,7 @@ const Navbar = () => {
             <div className="navbar-menu" id="line-one" >
                 <ul className="navbar-lines" >
                     <a href="https://romain-bernaz-portfolio.herokuapp.com/photographs"><li  className="line-three">Photographs</li></a>
-                    <li className="line-one">About me</li>
+                    <a href="https://romain-bernaz-portfolio.herokuapp.com/about"><li className="line-one">About me</li></a>
                     <a href="#bandeau"><li className="line-two">Projects</li></a>
                     <a href="https://romain-bernaz-portfolio.herokuapp.com/"><li className="line-four">Home</li></a>
                 </ul>
