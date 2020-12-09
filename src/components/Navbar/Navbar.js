@@ -2,6 +2,9 @@ import React, { useRef, useEffect } from 'react';
 import { gsap, Power2 } from 'gsap';
 import './Navbar.css'
 
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+gsap.registerPlugin(ScrollTrigger);
+
 const Navbar = () => {
 
     const navbarDisplay =() => {
@@ -60,9 +63,19 @@ const Navbar = () => {
             ease:Power2.out,
     
         })
+        gsap.from('.line-four',{
+            opacity:0,
+            delay:1.1,
+            duration:1,
+            x:-200,
+            ease:Power2.out,
+    
+        })
     
     
       }
+
+
 
 
     return (
@@ -80,6 +93,7 @@ const Navbar = () => {
                     <a href="https://romain-bernaz-portfolio.herokuapp.com/photographs"><li  className="line-three">Photographs</li></a>
                     <li className="line-one">About me</li>
                     <a href="#bandeau"><li className="line-two">Projects</li></a>
+                    <a href="https://romain-bernaz-portfolio.herokuapp.com/"><li className="line-four">Home</li></a>
                 </ul>
             </div>
         </div>

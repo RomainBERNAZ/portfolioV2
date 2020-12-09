@@ -197,9 +197,10 @@
   }
   .container-photograph .black-start h2 {
     width: 100%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
+    -webkit-transform: translateY(-70%);
+            transform: translateY(-70%);
     position: absolute;
+    text-align: center;
     top: 50vh;
     line-height: 4.2rem;
     font-size: 3.8rem;
@@ -229,9 +230,11 @@
   .container-photograph .main-title h3 {
     color: black;
     font-family: Morganite;
-    font-size: 15vh;
-    padding-top: 7vh;
-    margin-left: 2vw;
+    font-size: 20vh;
+    text-align: start;
+    padding-left: 2vw;
+    padding-top: 14vh;
+    margin-left: 0vw;
   }
   .container-photograph .main-title h3 span {
     color: white;
@@ -242,23 +245,27 @@
   }
   .container-photograph .photograph-text-intro .photograph-text {
     margin-top: 0vh;
+    padding-left: 1vw;
+    padding-right: 1vw;
     position: relative;
     margin-left: 2vw;
     left: 0vw;
+    line-height: 4vh;
     color: whitesmoke;
-    text-align: justify;
+    text-align: start;
     font-family: Champagne;
-    font-size: 2vh;
+    font-size: 3.8vh;
     font-weight: 600;
-    line-height: 3vh;
   }
   .container-photograph .photographs .londonCity {
-    width: 85vw;
+    width: 98vw;
     text-align: end;
+    margin-left: 1vw;
   }
   .container-photograph .photographs .londonCity .london {
     position: relative;
-    height: 15vh;
+    height: auto;
+    width: 100%;
   }
   .container-photograph .photographs .londonCity p {
     position: relative;
@@ -270,13 +277,15 @@
   }
   .container-photograph .photographs .londonBridge {
     padding-top: 10vh;
-    margin-left: 10vw;
-    width: 85vw;
+    margin-left: 0vw;
+    width: 98vw;
     text-align: start;
+    margin-left: 1vw;
   }
   .container-photograph .photographs .londonBridge .bridge {
     position: relative;
-    height: 15vh;
+    height: auto;
+    width: 100%;
   }
   .container-photograph .photographs .londonBridge p {
     position: relative;
@@ -288,12 +297,14 @@
   }
   .container-photograph .photographs .londonShop {
     padding-top: 10vh;
-    width: 85vw;
+    width: 98vw;
+    margin-left: 1vw;
     text-align: end;
   }
   .container-photograph .photographs .londonShop .shop {
     position: relative;
-    height: 15vh;
+    height: auto;
+    width: 100%;
   }
   .container-photograph .photographs .londonShop p {
     position: relative;
@@ -305,13 +316,14 @@
   }
   .container-photograph .photographs .judStreet {
     padding-top: 10vh;
-    width: 85vw;
-    margin-left: 10vw;
+    width: 98vw;
+    margin-left: 1vw;
     text-align: start;
   }
   .container-photograph .photographs .judStreet .jude {
     position: relative;
-    height: 15vh;
+    height: auto;
+    width: 100%;
   }
   .container-photograph .photographs .judStreet p {
     position: relative;

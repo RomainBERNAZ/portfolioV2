@@ -60,7 +60,7 @@ const Photographs = () => {
             scrollTrigger : {
                 trigger : '.photograph-text',
                 start :'top center',
-                end: "+=800px",
+                end: "+=500px",
                 scrub: true
 
             },
@@ -70,7 +70,7 @@ const Photographs = () => {
             scrollTrigger : {
                 trigger : '.london',
                 start :'top bottom',
-                end: "+=1000px",
+                end: "+=600px",
                 scrub: true
 
             },
@@ -80,7 +80,7 @@ const Photographs = () => {
             scrollTrigger : {
                 trigger : '.bridge',
                 start :'top center',
-                end: "+=700px",
+                end: "+=500px",
                 scrub: true
 
             },

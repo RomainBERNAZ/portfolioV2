@@ -1,53 +1,61 @@
 // Affichage du menu en haut à gauche
-.navbar{
+.navbar {
     position: absolute;
     z-index: 5000;
     right: 2.5vw;
     top: 4vh;
-    .navbar-lines{
+
+    .navbar-lines {
+        height: 100px;
+        width: 100px;
         transform: rotate(90deg);
         display: inline-flex;
-        justify-content: space-around;
         text-decoration: none;
-        list-style: none;            
-        .line-1{
-            margin-right: 0.3vw;
+        list-style: none;
+
+        .line-1 {
+            margin-right: 0.4vw;
             height: 50px;
             width: 10px;
             background-color: black;
-            
         }
-        
-        .line-2{
-            margin-right: 0.3vw;
+
+        .line-2 {
+            margin-right: 0.4vw;
             height: 50px;
             width: 10px;
             background-color: black;
-            &:hover{
+
+            &:hover {
                 background-color: white;
             }
         }
-        .line-3{
-            margin-right: 0.3vw;
+
+        .line-3 {
+            margin-right: 0.4vw;
             height: 50px;
             width: 10px;
             background-color: black;
         }
     }
 }
+
 //Affichage des différentes catégories du menu quand clic 
-.navbar-menu{
+.navbar-menu {
     z-index: 5000;
     display: none;
     position: absolute;
-    top: 5vh;
-    right:-3vw;
+    top: 0.5vh;
+    right: -1vw;
     color: white;
     transform: rotate(90deg);
-    .navbar-lines{
+
+    .navbar-lines {
         list-style: none;
         text-decoration: none;
-        .line-one{
+
+        .line-one {
+            opacity: 0.50;
             padding-top: 0.7vh;
             font-family: Champagne;
             margin-top: 2vh;
@@ -58,8 +66,16 @@
             width: 270px;
             color: white;
             background-color: black;
+            transition: background-color .6s linear, color .6s linear;
+            &:hover{
+                background-color: whitesmoke;
+                color: black;
+            }
+
         }
-        .line-two{
+
+        .line-two {
+            opacity: 0.5;
             padding-top: 0.7vh;
             font-family: Champagne;
             margin-top: 2vh;
@@ -70,10 +86,18 @@
             width: 215px;
             color: white;
             background-color: black;
+            transition: background-color .6s linear, color .6s linear;
+            &:hover{
+                background-color: whitesmoke;
+                color: black;
+            }
         }
-        a{
+
+        a {
             text-decoration: none;
-            .line-three{
+
+            .line-three {
+                opacity: 0.5;
                 padding-top: 0.7vh;
                 margin-top: 2vh;
                 font-family: Champagne;
@@ -84,9 +108,193 @@
                 width: 320px;
                 color: white;
                 background-color: black;
+                transition: background-color .6s linear, color .6s linear;
+                &:hover{
+                background-color: whitesmoke;
+                color: black;
+            }
+
             }
 
         }
-        
+
+        a {
+            text-decoration: none;
+
+            .line-four {
+                opacity: 0.5;
+                padding-top: 0.7vh;
+                margin-top: 2vh;
+                font-family: Champagne;
+                letter-spacing: 0.5vw;
+                padding-left: 2vw;
+                font-size: 3vh;
+                height: 50px;
+                width: 150px;
+                color: white;
+                background-color: black;
+                transition: background-color .6s linear, color .6s linear;
+                &:hover{
+                    background-color: whitesmoke;
+                    color: black;
+                }            }
+
+        }
+
     }
+}
+
+@media screen and (max-width: 890px) {
+
+    // Affichage du menu en haut à gauche
+.navbar {
+    position: absolute;
+    z-index: 5000;
+    right: 6vw;
+    top: 3vh;
+
+    .navbar-lines {
+        height: 100px;
+        width: 100px;
+        transform: rotate(90deg);
+        display: inline-flex;
+        text-decoration: none;
+        list-style: none;
+
+        .line-1 {
+            margin-right: 0.18vw;
+            height: 40px;
+            width: 8px;
+            background-color: black;
+        }
+
+        .line-2 {
+            margin-right: 0.4vw;
+            height: 40px;
+            width: 8px;
+            background-color: black;
+
+            &:hover {
+                background-color: white;
+            }
+        }
+
+        .line-3 {
+            margin-right: 0.4vw;
+            height: 40px;
+            width: 8px;
+            background-color: black;
+        }
+    }
+}
+
+//Affichage des différentes catégories du menu quand clic 
+.navbar-menu {
+    z-index: 5000;
+    display: none;
+    position: absolute;
+    top: -2vh;
+    left: 0vw;
+    color: white;
+    transform: rotate(0deg);
+
+    .navbar-lines {
+        list-style: none;
+        text-decoration: none;
+
+        .line-one {
+            opacity: 1;
+            text-align: center;
+            font-family: Champagne;
+            margin-top: 0vh;
+            letter-spacing: 0.5vw;
+            padding-left: 2vw;
+            font-size: 3vh;
+            height: 35px;
+            width: 100vw;
+            border-bottom: 1px white solid;
+            color: white;
+            background-color: black;
+            transition: background-color .6s linear, color .6s linear;
+            &:hover{
+                background-color: whitesmoke;
+                color: black;
+            }
+
+        }
+
+        .line-two {
+            opacity: 1;
+            text-align: center;
+            font-family: Champagne;
+            margin-top: 0vh;
+            letter-spacing: 0.5vw;
+            padding-left: 2vw;
+            border-bottom: 1px white solid;
+            font-size: 3vh;
+            height: 35px;
+            width: 100vw;
+            color: white;
+            background-color: black;
+            transition: background-color .6s linear, color .6s linear;
+            &:hover{
+                background-color: whitesmoke;
+                color: black;
+            }
+        }
+
+        a {
+            text-decoration: none;
+
+            .line-three {
+                opacity: 1;
+                text-align: center;
+                font-family: Champagne;
+                letter-spacing: 0.5vw;
+                padding-left: 2vw;
+                border-bottom: 1px white solid;
+                font-size: 3vh;
+                height: 35px;
+                width: 100vw;
+                color: white;
+                background-color: black;
+                transition: background-color .6s linear, color .6s linear;
+                &:hover{
+                background-color: whitesmoke;
+                color: black;
+            }
+
+            }
+
+        }
+
+        a {
+            text-decoration: none;
+
+            .line-four {
+                text-align: center;
+                opacity: 1;
+                font-family: Champagne;
+                letter-spacing: 0.5vw;
+                margin-top: 0vh;
+                padding-left: 2vw;
+                font-size: 3vh;
+                height: 35px;
+                width: 100vw;
+                color: white;
+                background-color: black;
+                transition: background-color .6s linear, color .6s linear;
+                &:hover{
+                    background-color: whitesmoke;
+                    color: black;
+                }            }
+
+        }
+
+    }
+}
+
+
+
+
 }

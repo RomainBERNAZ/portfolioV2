@@ -6,26 +6,26 @@
 }
 
 .navbar .navbar-lines {
+  height: 100px;
+  width: 100px;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   text-decoration: none;
   list-style: none;
 }
 
 .navbar .navbar-lines .line-1 {
-  margin-right: 0.3vw;
+  margin-right: 0.4vw;
   height: 50px;
   width: 10px;
   background-color: black;
 }
 
 .navbar .navbar-lines .line-2 {
-  margin-right: 0.3vw;
+  margin-right: 0.4vw;
   height: 50px;
   width: 10px;
   background-color: black;
@@ -36,7 +36,7 @@
 }
 
 .navbar .navbar-lines .line-3 {
-  margin-right: 0.3vw;
+  margin-right: 0.4vw;
   height: 50px;
   width: 10px;
   background-color: black;
@@ -46,8 +46,8 @@
   z-index: 5000;
   display: none;
   position: absolute;
-  top: 5vh;
-  right: -3vw;
+  top: 0.5vh;
+  right: -1vw;
   color: white;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
@@ -59,6 +59,7 @@
 }
 
 .navbar-menu .navbar-lines .line-one {
+  opacity: 0.50;
   padding-top: 0.7vh;
   font-family: Champagne;
   margin-top: 2vh;
@@ -69,9 +70,17 @@
   width: 270px;
   color: white;
   background-color: black;
+  -webkit-transition: background-color .6s linear, color .6s linear;
+  transition: background-color .6s linear, color .6s linear;
+}
+
+.navbar-menu .navbar-lines .line-one:hover {
+  background-color: whitesmoke;
+  color: black;
 }
 
 .navbar-menu .navbar-lines .line-two {
+  opacity: 0.5;
   padding-top: 0.7vh;
   font-family: Champagne;
   margin-top: 2vh;
@@ -82,6 +91,13 @@
   width: 215px;
   color: white;
   background-color: black;
+  -webkit-transition: background-color .6s linear, color .6s linear;
+  transition: background-color .6s linear, color .6s linear;
+}
+
+.navbar-menu .navbar-lines .line-two:hover {
+  background-color: whitesmoke;
+  color: black;
 }
 
 .navbar-menu .navbar-lines a {
@@ -89,6 +105,7 @@
 }
 
 .navbar-menu .navbar-lines a .line-three {
+  opacity: 0.5;
   padding-top: 0.7vh;
   margin-top: 2vh;
   font-family: Champagne;
@@ -99,5 +116,176 @@
   width: 320px;
   color: white;
   background-color: black;
+  -webkit-transition: background-color .6s linear, color .6s linear;
+  transition: background-color .6s linear, color .6s linear;
+}
+
+.navbar-menu .navbar-lines a .line-three:hover {
+  background-color: whitesmoke;
+  color: black;
+}
+
+.navbar-menu .navbar-lines a {
+  text-decoration: none;
+}
+
+.navbar-menu .navbar-lines a .line-four {
+  opacity: 0.5;
+  padding-top: 0.7vh;
+  margin-top: 2vh;
+  font-family: Champagne;
+  letter-spacing: 0.5vw;
+  padding-left: 2vw;
+  font-size: 3vh;
+  height: 50px;
+  width: 150px;
+  color: white;
+  background-color: black;
+  -webkit-transition: background-color .6s linear, color .6s linear;
+  transition: background-color .6s linear, color .6s linear;
+}
+
+.navbar-menu .navbar-lines a .line-four:hover {
+  background-color: whitesmoke;
+  color: black;
+}
+
+@media screen and (max-width: 890px) {
+  .navbar {
+    position: absolute;
+    z-index: 5000;
+    right: 6vw;
+    top: 3vh;
+  }
+  .navbar .navbar-lines {
+    height: 100px;
+    width: 100px;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    text-decoration: none;
+    list-style: none;
+  }
+  .navbar .navbar-lines .line-1 {
+    margin-right: 0.18vw;
+    height: 40px;
+    width: 8px;
+    background-color: black;
+  }
+  .navbar .navbar-lines .line-2 {
+    margin-right: 0.4vw;
+    height: 40px;
+    width: 8px;
+    background-color: black;
+  }
+  .navbar .navbar-lines .line-2:hover {
+    background-color: white;
+  }
+  .navbar .navbar-lines .line-3 {
+    margin-right: 0.4vw;
+    height: 40px;
+    width: 8px;
+    background-color: black;
+  }
+  .navbar-menu {
+    z-index: 5000;
+    display: none;
+    position: absolute;
+    top: -2vh;
+    left: 0vw;
+    color: white;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  .navbar-menu .navbar-lines {
+    list-style: none;
+    text-decoration: none;
+  }
+  .navbar-menu .navbar-lines .line-one {
+    opacity: 1;
+    text-align: center;
+    font-family: Champagne;
+    margin-top: 0vh;
+    letter-spacing: 0.5vw;
+    padding-left: 2vw;
+    font-size: 3vh;
+    height: 35px;
+    width: 100vw;
+    border-bottom: 1px white solid;
+    color: white;
+    background-color: black;
+    -webkit-transition: background-color .6s linear, color .6s linear;
+    transition: background-color .6s linear, color .6s linear;
+  }
+  .navbar-menu .navbar-lines .line-one:hover {
+    background-color: whitesmoke;
+    color: black;
+  }
+  .navbar-menu .navbar-lines .line-two {
+    opacity: 1;
+    text-align: center;
+    font-family: Champagne;
+    margin-top: 0vh;
+    letter-spacing: 0.5vw;
+    padding-left: 2vw;
+    border-bottom: 1px white solid;
+    font-size: 3vh;
+    height: 35px;
+    width: 100vw;
+    color: white;
+    background-color: black;
+    -webkit-transition: background-color .6s linear, color .6s linear;
+    transition: background-color .6s linear, color .6s linear;
+  }
+  .navbar-menu .navbar-lines .line-two:hover {
+    background-color: whitesmoke;
+    color: black;
+  }
+  .navbar-menu .navbar-lines a {
+    text-decoration: none;
+  }
+  .navbar-menu .navbar-lines a .line-three {
+    opacity: 1;
+    text-align: center;
+    font-family: Champagne;
+    letter-spacing: 0.5vw;
+    padding-left: 2vw;
+    border-bottom: 1px white solid;
+    font-size: 3vh;
+    height: 35px;
+    width: 100vw;
+    color: white;
+    background-color: black;
+    -webkit-transition: background-color .6s linear, color .6s linear;
+    transition: background-color .6s linear, color .6s linear;
+  }
+  .navbar-menu .navbar-lines a .line-three:hover {
+    background-color: whitesmoke;
+    color: black;
+  }
+  .navbar-menu .navbar-lines a {
+    text-decoration: none;
+  }
+  .navbar-menu .navbar-lines a .line-four {
+    text-align: center;
+    opacity: 1;
+    font-family: Champagne;
+    letter-spacing: 0.5vw;
+    margin-top: 0vh;
+    padding-left: 2vw;
+    font-size: 3vh;
+    height: 35px;
+    width: 100vw;
+    color: white;
+    background-color: black;
+    -webkit-transition: background-color .6s linear, color .6s linear;
+    transition: background-color .6s linear, color .6s linear;
+  }
+  .navbar-menu .navbar-lines a .line-four:hover {
+    background-color: whitesmoke;
+    color: black;
+  }
 }
 /*# sourceMappingURL=Navbar.css.map */

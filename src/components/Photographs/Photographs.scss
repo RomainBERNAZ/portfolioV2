@@ -203,8 +203,9 @@
     
             h2 {
                 width: 100%;
-                transform: translateY(-50%);
+                transform: translateY(-70%);
                 position: absolute;
+                text-align: center;
                 top: 50vh;
                 line-height: 4.2rem;
                 font-size: 3.8rem;
@@ -237,9 +238,11 @@
             h3 {
                 color: black;
                 font-family: Morganite;
-                font-size: 15vh;
-                padding-top: 7vh;
-                margin-left: 2vw;
+                font-size: 20vh;
+                text-align: start;
+                padding-left: 2vw;
+                padding-top: 14vh;
+                margin-left: 0vw;
     
                 span {
                     color: white;
@@ -255,26 +258,31 @@
     
             .photograph-text {
                 margin-top: 0vh;
+                padding-left: 1vw;
+                padding-right: 1vw;
                 position: relative;
                 margin-left: 2vw;
                 left: 0vw;
+                line-height: 4vh;
                 color: whitesmoke;
-                text-align: justify;
+                text-align: start;
                 font-family: Champagne;
-                font-size: 2vh;
+                font-size: 3.8vh;
                 font-weight: 600;
-                line-height: 3vh;
             }
         }
     
         .photographs {
             .londonCity {
-                width: 85vw;
+                width: 98vw;
                 text-align: end;
+                margin-left: 1vw;
+
     
                 .london {
                     position: relative;
-                    height: 15vh;
+                    height: auto;
+                    width: 100%;
                 }
     
                 p {
@@ -289,13 +297,16 @@
     
             .londonBridge {
                 padding-top: 10vh;
-                margin-left: 10vw;
-                width: 85vw;
+                margin-left: 0vw;
+                width: 98vw;
                 text-align: start;
+                margin-left: 1vw;
     
                 .bridge {
                     position: relative;
-                    height: 15vh;
+                    height: auto;
+                    width: 100%;
+                    
                 }
     
                 p {
@@ -310,12 +321,14 @@
     
             .londonShop {
                 padding-top: 10vh;
-                width: 85vw;
+                width: 98vw;
+                margin-left: 1vw;
                 text-align: end;
     
                 .shop {
                     position: relative;
-                    height: 15vh;
+                    height: auto;
+                    width: 100%;
                 }
     
                 p {
@@ -331,14 +344,14 @@
             }
             .judStreet {
                 padding-top: 10vh;
-                width: 85vw;
-                margin-left: 10vw;
-    
+                width: 98vw;
+                margin-left: 1vw;
                 text-align: start;
     
                 .jude {
                     position: relative;
-                    height: 15vh;
+                    height: auto;
+                    width: 100%;
                 }
     
                 p {
