@@ -1,5 +1,8 @@
 .bandeau {
-  overflow-x: hidden;
+  height: -webkit-max-content !important;
+  height: -moz-max-content !important;
+  height: max-content !important;
+  overflow: hidden;
   position: absolute;
   top: 100vh;
   width: 100vw;
@@ -309,8 +312,13 @@
 }
 
 .recipeBlock .recipeText a {
-  top: 0vh;
-  font-size: 4vh;
+  position: relative;
+  top: 4vh;
+  text-decoration: none;
+  color: silver;
+  padding-left: 42vw;
+  margin-top: 5vh !important;
+  font-size: 3.5rem;
 }
 
 .recipeBlock .recipeText a:hover {
@@ -451,9 +459,13 @@
     width: 80vw;
   }
   .bandeau .recipeBlock .recipeText a {
-    top: 0vh;
+    position: relative;
+    top: 4vh;
+    text-decoration: none;
+    color: silver;
+    padding-left: 42vw;
+    margin-top: 5vh !important;
     font-size: 4vh;
-    left: 30vw;
   }
   .bandeau .recipeBlock .recipeText a:hover {
     color: grey;

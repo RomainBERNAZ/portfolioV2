@@ -1,7 +1,8 @@
 
 
 .bandeau {
-    overflow-x: hidden;
+    height: max-content !important;
+    overflow: hidden;
     position: absolute;
     top: 100vh;
     width: 100vw;
@@ -261,9 +262,14 @@
             line-height: 5vh;
         }
         a{
-            top: 0vh;
-            font-size: 4vh;
-            &:hover{ 
+            position: relative;
+            top: 4vh;
+            text-decoration: none;
+            color: silver;
+            padding-left: 42vw;
+            margin-top: 5vh !important; 
+            font-size: 3.5rem;
+            &:hover{
                 color: grey;
             }
         }
@@ -418,10 +424,14 @@
                     width: 80vw;
                 }
                 a{
-                    top: 0vh;
+                    position: relative;
+                    top: 4vh;
+                    text-decoration: none;
+                    color: silver;
+                    padding-left: 42vw;
+                    margin-top: 5vh !important; 
                     font-size: 4vh;
-                    left: 30vw;
-                    &:hover{ 
+                    &:hover{
                         color: grey;
                     }
                 }
