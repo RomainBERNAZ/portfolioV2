@@ -233,7 +233,7 @@ const Photographs = () => {
                  )}
             </div>
         </div>
-        
+         
         </div>
         <div className="modal-image" id='modal-image' onClick={closeModal}>
                 <img src={srcImage} alt=""/>
