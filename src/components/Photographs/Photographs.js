@@ -1,9 +1,5 @@
 import React, { useRef, useEffect, useState } from 'react';
 import { gsap, Power4, TimelineLite } from 'gsap';
-import london from '../../images/photographs/london.jpg'
-import bridge from '../../images/photographs/pont.jpg'
-import shop from '../../images/photographs/shop.jpg'
-import jude from '../../images/photographs/judstreet.jpg'
 import array from './images'
 
 
@@ -209,19 +205,19 @@ const Photographs = () => {
 
         <div className="photographs">
             <div className="londonCity">
-                <img className="london" src={london} alt=""/>
+                <img className="london" src={require ('../../images/photographs/london.jpg')} alt=""/>
                 <p>Londres, La City</p>
             </div>
             <div className="londonBridge">
-                <img className="bridge" src={bridge} alt=""/>
+                <img className="bridge" src={require ('../../images/photographs/pont.jpg')} alt=""/>
                 <p>Londres, Southwark Bridge</p>
             </div>
             <div className="londonShop">
-                <img className="shop" src={shop} alt=""/>
+                <img className="shop" src={require ('../../images/photographs/shop.jpg')} alt=""/>
                 <p>Londres, Boutique à Shoreditch</p>
             </div>
             <div className="judStreet">
-                <img className="jude" src={jude} alt=""/>
+                <img className="jude" src={ require ('../../images/photographs/judstreet.jpg')} alt=""/>
                 <p>Londres, Rue inconnue.</p>
             </div>
 

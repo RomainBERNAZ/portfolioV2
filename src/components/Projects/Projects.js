@@ -1,10 +1,6 @@
 import React, { useEffect} from 'react';
 import { gsap} from 'gsap';
 import './Projects.css';
-import recipe from '../../images/recipe.png'
-import weather from '../../images/weather.png'
-import twitter from '../../images/twitter.png'
-import fairmade from '../../images/fairmade.png'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 gsap.registerPlugin(ScrollTrigger);
 
@@ -226,7 +222,7 @@ const Projects = () => {
 
         <div className="fairmadeBlock">
                 <div className="fairmadeImage">
-                    <img src={fairmade} alt="" className="fairmade"/>
+                    <img src={require ('../../images/fairmade.png')} alt="" className="fairmade"/>
                     <div className="fairmadeSquare"></div>
                 </div>
                 <div className="fairmadeText">
@@ -254,14 +250,14 @@ const Projects = () => {
                     <a target="_blank" href="https://twitter.com/ParkNantesBot"> <i  className="fas fa-arrow-right"></i></a>
                 </div>
                 <div className="twitterImage">
-                    <img src={twitter} alt="" className="twitter"/>
+                    <img src={require('../../images/twitter.png')} alt="" className="twitter"/>
                     <div className="twitterSquare"></div>
                 </div>
         </div>
 
         <div className="weatherBlock">
                 <div className="weatherImage">
-                    <img src={weather} alt="" className="weather"/>
+                    <img src={require ('../../images/weather.png')} alt="" className="weather"/>
                     <div className="weatherSquare"></div>
                 </div>
                 <div className="weatherText">
@@ -292,7 +288,7 @@ const Projects = () => {
                     <a target="_blank" href="https://react-recipe-app-strapi.herokuapp.com/"> <i  className="fas fa-arrow-right"></i></a>
                 </div>
                 <div className="recipeImage">
-                    <img src={recipe} alt="" className="recipe"/>
+                    <img src={require ('../../images/recipe.png')} alt="" className="recipe"/>
                     <div className="recipeSquare"></div>
                 </div>
         </div>
