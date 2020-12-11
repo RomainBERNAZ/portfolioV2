@@ -13,8 +13,6 @@ gsap.registerPlugin(ScrollTrigger);
 
 
 const Photographs = () => {
-
-    const modal = document.getElementById('modal-image');
     const arrayPhoto = array.adata.initialdata;
     const [srcImage, setSrcImage] = useState(null); 
     var blackStart = useRef(null);
@@ -164,12 +162,16 @@ const Photographs = () => {
             onLeaveBack: () => gsap.to(".container-photograph", {backgroundColor: "black", overwrite: 'auto'})})
 
     },[])
-
+    
     const closeModal = () => {
+        let modal = document.getElementById('modal-image');
         modal.style.display="none"; 
     }
 
     const resize = (e) => {
+        let modal = document.getElementById('modal-image');
+
+        console.log(modal)
         modal.style.display="block"; 
         let image = document.getElementById(e.target.id);
         let imagesrc = image.src
