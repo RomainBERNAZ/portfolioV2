@@ -4,6 +4,7 @@ import london from '../../images/photographs/london.jpg'
 import bridge from '../../images/photographs/pont.jpg'
 import shop from '../../images/photographs/shop.jpg'
 import jude from '../../images/photographs/judstreet.jpg'
+import array from './images'
 
 
 import './Photographs.css';
@@ -13,13 +14,13 @@ gsap.registerPlugin(ScrollTrigger);
 
 const Photographs = () => {
 
-   
+    const modal = document.getElementById('modal-image');
+    const arrayPhoto = array.adata.initialdata;
+    const [srcImage, setSrcImage] = useState(null); 
     var blackStart = useRef(null);
 
     useEffect(() =>{
-
         var mql = window.matchMedia('(max-width: 600px)');
-
         
         if (mql.matches) {
             //Animation de la div noire au démarrage de la page.Mobile first
@@ -157,15 +158,28 @@ const Photographs = () => {
             onLeaveBack: () => gsap.to(".container-photograph", {backgroundColor: "#A49C9B", overwrite: 'auto'})})
 
         ScrollTrigger.create({
-            trigger: ".jude",
-            start: "top top",
+            trigger: ".titre-divers",
+            start: "bottom bottom",
             onEnter: () => gsap.to(".container-photograph", {backgroundColor: "#A49C9B", overwrite: 'auto'}),
             onLeaveBack: () => gsap.to(".container-photograph", {backgroundColor: "black", overwrite: 'auto'})})
 
-
-
-
     },[])
+
+    const closeModal = () => {
+        modal.style.display="none"; 
+    }
+
+    const resize = (e) => {
+        modal.style.display="block"; 
+        let image = document.getElementById(e.target.id);
+        let imagesrc = image.src
+        setSrcImage(imagesrc)
+        console.log(imagesrc)
+     //   image.style.cssText = 'object-fit: none; width: 50vw; height: auto; position:absolute; z-index: 10;'
+
+
+    }
+
 
     return (
         <div className="container-photograph">
@@ -196,17 +210,14 @@ const Photographs = () => {
                 <img className="london" src={london} alt=""/>
                 <p>Londres, La City</p>
             </div>
-            
             <div className="londonBridge">
                 <img className="bridge" src={bridge} alt=""/>
                 <p>Londres, Southwark Bridge</p>
             </div>
-            
             <div className="londonShop">
                 <img className="shop" src={shop} alt=""/>
                 <p>Londres, Boutique à Shoreditch</p>
             </div>
-
             <div className="judStreet">
                 <img className="jude" src={jude} alt=""/>
                 <p>Londres, Rue inconnue.</p>
@@ -217,13 +228,16 @@ const Photographs = () => {
             </div>
 
             <div className="photographs-divers">
-            
-
+                {arrayPhoto.map((photo) =>
+                    <img onClick={resize} key={photo.key} id={photo.key} src={ require (`../../images/photographs/${photo.image}.jpg`).default} alt=""/>
+                 )}
             </div>
-
         </div>
+        
         </div>
-
+        <div className="modal-image" id='modal-image' onClick={closeModal}>
+                <img src={srcImage} alt=""/>
+            </div>
         </div>
     )
 }

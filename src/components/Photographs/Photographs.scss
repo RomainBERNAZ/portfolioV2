@@ -1,6 +1,9 @@
+
+
+
 .container-photograph {
     background-color: #A49C9B;
-    height: 700vh;
+    height: 940vh;
     width: 100vw;
 
     .black-start {
@@ -177,11 +180,51 @@
 
         }
         .photographs-divers{
-            width: 90vw;
+            list-style: none;
+            padding-top: 20vh;
+            width: 100vw;
             display: grid;
-            grid-template-columns: 33% 33% 33%;
-        }
+            padding-right: 2vw;
+            justify-content: space-evenly;
+            grid-template-columns: 30% 30% 30%;
+            img{
+                object-fit: cover;
+                height: 35vh;
+                padding-right: 2vw;
+                transition: 0.5s;
+                margin-bottom: 2vw;
+                width: 100%;
+                &:hover{
+                    transform: scale(1.05);
+                }
+            }
 
+        }
+        
+
+    }
+    .modal-image{
+        width: 100vw;
+        height: 100vh;
+        text-align: center;
+        position:fixed; 
+        background-color: rgba(0, 0, 0, 0.7);
+        top: calc(0% ); // half of width
+        left: calc(0); // half of height
+        button{
+            position: absolute;
+            top: 3vh;
+            right: 3vw;
+            font-size: 5vh;
+            background: none;
+            border: none;
+        }
+        img{
+            transition: 1s;
+            top: 10vh;
+            position: relative;
+            height: 80vh;
+        }
     }
 }
 @media screen and (max-width: 890px) {
