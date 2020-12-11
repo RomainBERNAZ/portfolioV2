@@ -205,19 +205,19 @@ const Photographs = () => {
 
         <div className="photographs">
             <div className="londonCity">
-                <img className="london" src={require ('../../images/photographs/london.jpg')} alt=""/>
+                <img className="london" src={require ('../../images/photographs/london.jpg').default} alt=""/>
                 <p>Londres, La City</p>
             </div>
             <div className="londonBridge">
-                <img className="bridge" src={require ('../../images/photographs/pont.jpg')} alt=""/>
+                <img className="bridge" src={require ('../../images/photographs/pont.jpg').default} alt=""/>
                 <p>Londres, Southwark Bridge</p>
             </div>
             <div className="londonShop">
-                <img className="shop" src={require ('../../images/photographs/shop.jpg')} alt=""/>
+                <img className="shop" src={require ('../../images/photographs/shop.jpg').default} alt=""/>
                 <p>Londres, Boutique à Shoreditch</p>
             </div>
             <div className="judStreet">
-                <img className="jude" src={ require ('../../images/photographs/judstreet.jpg')} alt=""/>
+                <img className="jude" src={ require ('../../images/photographs/judstreet.jpg').default} alt=""/>
                 <p>Londres, Rue inconnue.</p>
             </div>
 
