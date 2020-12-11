@@ -191,7 +191,7 @@ const Photographs = () => {
             </h2>
             </div>
             <div className="div-photo">
-        
+         
         <div className="main-title">
             <h3><span>P</span>HOTOGRAPHS</h3>
         </div>
