@@ -273,7 +273,7 @@ const Projects = () => {
                     <a target="_blank" href="https://romainbernaz.github.io/weatherApp/"> <i  className="fas fa-arrow-right"></i></a>
                 </div>
         </div>
-
+ 
         <div className="recipeBlock">
                 <div className="recipeText">
                     <div className="recipeTitle">RECIPE APP</div>
