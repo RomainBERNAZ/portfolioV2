@@ -1,7 +1,7 @@
 .container-about {
   background-color: #A49C9B;
   overflow-x: hidden;
-  height: 150vh;
+  height: 160vh;
 }
 
 .container-about .black-start {
@@ -96,14 +96,21 @@
   color: white;
 }
 
-.container-about .presentation .text-presentation .liste {
-  margin-top: 5vh;
-}
-
-.container-about .presentation .text-presentation .liste ul {
+.container-about .presentation .text-presentation ul {
   text-decoration: none;
   list-style: none;
   margin-left: 2vw;
+}
+
+.container-about .presentation .text-presentation ul li {
+  margin-top: 3vh;
+  font-family: Champagne;
+  font-size: 2.4em;
+  margin-left: 4vw;
+}
+
+.container-about .presentation .text-presentation .liste {
+  margin-top: 5vh;
 }
 
 .container-about .presentation .text-presentation .liste a {
@@ -127,9 +134,6 @@
 }
 
 @media screen and (max-width: 890px) {
-  body {
-    overflow-x: hidden;
-  }
   .container-about {
     background-color: #A49C9B;
     overflow-x: hidden;

@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from 'react';
 import { gsap, Power4, TimelineLite  } from 'gsap';
-//import photo from '../../images/principale.png'
-// import resume from '../../images/ROMAIN-BERNAZ.pdf'
+import photo from '../../images/principale.png'
+import resume from '../../images/ROMAIN-BERNAZ.pdf'
 import './About.css';
 
 
@@ -78,6 +78,7 @@ const About = () => {
         </p>
         <p className="liste">
             Non-exhaustive list of languages and librairy that I work with: <br/>
+        </p>
             <ul>
                 <li>- JavaScript x React</li>
                 <li>- HTML5</li>
@@ -86,7 +87,8 @@ const About = () => {
                 <li>- NODEJS</li>
 
             </ul>
-            You can find my resume  <a class="resume" target="_blank" >here</a>
+        <p className="liste">
+            You can find my resume  <a class="resume" target="_blank" href={resume}>here</a>
                 
         </p>
         <p className="contact">
@@ -99,7 +101,7 @@ const About = () => {
 
             </div>
        <div className="image-presentation">
-        {/**<img src={photo} alt=""/> */} 
+        <img src={photo} alt=""/>
        </div>
         
         </div>           
