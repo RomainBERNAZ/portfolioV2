@@ -34,7 +34,7 @@ const About = () => {
             delay:1.2,
             skewY:-3,
             stagger: {
-               amount: 1
+               amount: 1 
             }
         })
         
