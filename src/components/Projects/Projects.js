@@ -222,7 +222,7 @@ const Projects = () => {
 
         <div className="fairmadeBlock">
                 <div className="fairmadeImage">
-                    <img src={require ('../../images/fairmade.png').default} alt="" className="fairmade"/>
+           { /*      <img src={require ('../../images/fairmade.png').default} alt="" className="fairmade"/> */    }
                     <div className="fairmadeSquare"></div>
                 </div>
                 <div className="fairmadeText">
@@ -250,14 +250,14 @@ const Projects = () => {
                     <a target="_blank" href="https://twitter.com/ParkNantesBot"> <i  className="fas fa-arrow-right"></i></a>
                 </div>
                 <div className="twitterImage">
-                    <img src={require('../../images/twitter.png').default} alt="" className="twitter"/>
+            {/*  <img src={require('../../images/twitter.png').default} alt="" className="twitter"/>*/}       
                     <div className="twitterSquare"></div>
                 </div>
         </div>
 
         <div className="weatherBlock">
                 <div className="weatherImage">
-                    <img src={require ('../../images/weather.png').default} alt="" className="weather"/>
+             {/* <img src={require ('../../images/weather.png').default} alt="" className="weather"/> */}      
                     <div className="weatherSquare"></div>
                 </div>
                 <div className="weatherText">
@@ -288,7 +288,7 @@ const Projects = () => {
                     <a target="_blank" href="https://react-recipe-app-strapi.herokuapp.com/"> <i  className="fas fa-arrow-right"></i></a>
                 </div>
                 <div className="recipeImage">
-                    <img src={require ('../../images/recipe.png').default} alt="" className="recipe"/>
+                {/*  <img src={require ('../../images/recipe.png').default} alt="" className="recipe"/>*/}   
                     <div className="recipeSquare"></div>
                 </div>
         </div>
