@@ -175,7 +175,7 @@ const Photographs = () => {
         console.log(imagesrc)
      //   image.style.cssText = 'object-fit: none; width: 50vw; height: auto; position:absolute; z-index: 10;'
 
-
+ 
     }
 
 
