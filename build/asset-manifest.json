@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/portfolioV2/static/css/main.8359388f.chunk.css",
+    "main.js": "/portfolioV2/static/js/main.2f04d46c.chunk.js",
+    "main.js.map": "/portfolioV2/static/js/main.2f04d46c.chunk.js.map",
+    "runtime-main.js": "/portfolioV2/static/js/runtime-main.958e6896.js",
+    "runtime-main.js.map": "/portfolioV2/static/js/runtime-main.958e6896.js.map",
+    "static/js/2.d2a70bb7.chunk.js": "/portfolioV2/static/js/2.d2a70bb7.chunk.js",
+    "static/js/2.d2a70bb7.chunk.js.map": "/portfolioV2/static/js/2.d2a70bb7.chunk.js.map",
+    "static/js/3.cbdee031.chunk.js": "/portfolioV2/static/js/3.cbdee031.chunk.js",
+    "static/js/3.cbdee031.chunk.js.map": "/portfolioV2/static/js/3.cbdee031.chunk.js.map",
+    "index.html": "/portfolioV2/index.html",
+    "static/css/main.8359388f.chunk.css.map": "/portfolioV2/static/css/main.8359388f.chunk.css.map",
+    "static/js/2.d2a70bb7.chunk.js.LICENSE.txt": "/portfolioV2/static/js/2.d2a70bb7.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/portfolioV2/static/media/Morganite-Medium.81747e80.ttf",
+    "static/media/fairmade.5d20ed14.png": "/portfolioV2/static/media/fairmade.5d20ed14.png",
+    "static/media/recipe.03b4d7a2.png": "/portfolioV2/static/media/recipe.03b4d7a2.png",
+    "static/media/twitter.0ffc468c.png": "/portfolioV2/static/media/twitter.0ffc468c.png",
+    "static/media/weather.872b0a1b.png": "/portfolioV2/static/media/weather.872b0a1b.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.958e6896.js",
+    "static/js/2.d2a70bb7.chunk.js",
+    "static/css/main.8359388f.chunk.css",
+    "static/js/main.2f04d46c.chunk.js"
+  ]
+}
