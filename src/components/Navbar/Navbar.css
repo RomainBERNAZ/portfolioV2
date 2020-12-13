@@ -156,7 +156,7 @@
 
 @media screen and (max-width: 890px) {
   .navbar {
-    position: fixed !important;
+    position: absolute;
     z-index: 5000;
     right: 6vw;
     top: 3vh;
@@ -196,7 +196,7 @@
   .navbar-menu {
     z-index: 5000;
     display: none;
-    position: fixed;
+    position: absolute;
     top: -2vh;
     left: 0vw;
     color: white;

@@ -7,6 +7,17 @@ gsap.registerPlugin(ScrollTrigger);
 
 const Navbar = () => {
 
+
+    useEffect(() => {
+
+        ScrollTrigger.create({
+            trigger: ".bandeau",
+            start: "top top",
+            onEnter: () => gsap.to([".line-1", ".line-2", ".line-3"], {backgroundColor: "white", overwrite: 'auto'}),
+            onLeaveBack: () => gsap.to([".line-1", ".line-2", ".line-3"], {backgroundColor: "black", overwrite: 'auto'})})
+    })
+
+
     const closeMenu = () => {
          //Affichage des catégories de menu
          gsap.to('.line-one',{
