@@ -429,11 +429,54 @@
     
             }
             .photographs-divers{
-                width: 90vw;
-                display: grid;
-                grid-template-columns: 33% 33% 33%;
-            }
+                list-style: none;
+                padding-top: 10vh;
+                width: 97vw;
+                display: grid; 
+                padding-right: 0vw;
+                margin-left: 1.5vw;
+                justify-content: space-evenly;
+                grid-template-columns: 100%;
+                img{
+                    object-fit: cover;
+                    height: auto;
+                    padding-right: 2vw;
+                    transition: 0.5s;
+                    margin-bottom: 2vw;
+                    width: 97vw;
+                    &:hover{
+                        transform: scale(1.05);
+                    }
+                }
     
+            }
+            
+        }
+    }
+    .modal-image{
+        display: none;
+        width: 100vw;
+        height: 100vh;
+        text-align: center;
+        position:fixed; 
+        background-color: rgba(0, 0, 0, 0.7);
+        top: calc(0% ); // half of width
+        left: calc(0); // half of height
+        button{
+            position: absolute;
+            top: 3vh;
+            right: 3vw;
+            font-size: 5vh;
+            background: none;
+            border: none;
+        }
+        img{
+            transition: 1s;
+            top: 50%;
+            transform: translateY(-50%);
+            position: relative;
+            height: auto;
+            width: 98vw;
         }
     }
 }
