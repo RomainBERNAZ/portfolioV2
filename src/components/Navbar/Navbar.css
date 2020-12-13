@@ -150,9 +150,13 @@
   color: black;
 }
 
+.navbar-menu .navbar-lines .line-five {
+  display: none;
+}
+
 @media screen and (max-width: 890px) {
   .navbar {
-    position: absolute;
+    position: fixed !important;
     z-index: 5000;
     right: 6vw;
     top: 3vh;
@@ -192,7 +196,7 @@
   .navbar-menu {
     z-index: 5000;
     display: none;
-    position: absolute;
+    position: fixed;
     top: -2vh;
     left: 0vw;
     color: white;
@@ -210,8 +214,9 @@
     margin-top: 0vh;
     letter-spacing: 0.5vw;
     padding-left: 2vw;
-    font-size: 3vh;
-    height: 30px;
+    font-size: 5vh;
+    padding-top: 3vh;
+    height: 60px;
     width: 100vw;
     border-bottom: 1px white solid;
     color: white;
@@ -231,8 +236,9 @@
     letter-spacing: 0.5vw;
     padding-left: 2vw;
     border-bottom: 1px white solid;
-    font-size: 3vh;
-    height: 30px;
+    font-size: 5vh;
+    padding-top: 3vh;
+    height: 60px;
     width: 100vw;
     color: white;
     background-color: black;
@@ -253,8 +259,9 @@
     letter-spacing: 0.5vw;
     padding-left: 2vw;
     border-bottom: 1px white solid;
-    font-size: 3vh;
-    height: 30px;
+    font-size: 5vh;
+    padding-top: 3vh;
+    height: 60px;
     width: 100vw;
     color: white;
     background-color: black;
@@ -274,16 +281,39 @@
     font-family: Champagne;
     letter-spacing: 0.5vw;
     margin-top: 0vh;
+    border-bottom: 1px white solid;
     padding-left: 2vw;
-    font-size: 3vh;
-    height: 30px;
+    font-size: 5vh;
+    height: 60px;
     width: 100vw;
+    padding-top: 3vh;
     color: white;
     background-color: black;
     -webkit-transition: background-color .6s linear, color .6s linear;
     transition: background-color .6s linear, color .6s linear;
   }
   .navbar-menu .navbar-lines a .line-four:hover {
+    background-color: whitesmoke;
+    color: black;
+  }
+  .navbar-menu .navbar-lines .line-five {
+    display: block;
+    text-align: center;
+    opacity: 1;
+    padding-top: 3vh;
+    font-family: Champagne;
+    letter-spacing: 0.5vw;
+    margin-top: 0vh;
+    padding-left: 2vw;
+    font-size: 5vh;
+    height: 60px;
+    width: 100vw;
+    color: white;
+    background-color: black;
+    -webkit-transition: background-color .6s linear, color .6s linear;
+    transition: background-color .6s linear, color .6s linear;
+  }
+  .navbar-menu .navbar-lines .line-five:hover {
     background-color: whitesmoke;
     color: black;
   }

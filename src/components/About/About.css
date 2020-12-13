@@ -137,7 +137,7 @@
   .container-about {
     background-color: #A49C9B;
     overflow-x: hidden;
-    height: 170vh;
+    height: 175vh;
     width: 100vw;
   }
   .container-about .black-start {
@@ -180,7 +180,7 @@
     height: -moz-max-content;
     height: max-content;
     position: absolute;
-    top: 0vh;
+    top: -15vh;
   }
   .container-about .div-about .main-title {
     padding-top: 13vh;
@@ -229,11 +229,6 @@
   .container-about .div-about .presentation .text-presentation .liste {
     margin-top: 5vh;
   }
-  .container-about .div-about .presentation .text-presentation .liste ul {
-    text-decoration: none;
-    list-style: none;
-    margin-left: 2vw;
-  }
   .container-about .div-about .presentation .text-presentation .liste a {
     list-style: none;
     text-decoration: none;
@@ -241,6 +236,12 @@
   }
   .container-about .div-about .presentation .text-presentation .liste a:hover {
     color: white;
+  }
+  .container-about .div-about .presentation .text-presentation ul {
+    text-decoration: none;
+    list-style: none;
+    margin-left: 2vw;
+    font-size: 1.3vh;
   }
   .container-about .div-about .presentation .image-presentation {
     width: 100vw;

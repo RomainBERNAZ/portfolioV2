@@ -125,7 +125,7 @@
     .container-about{
         background-color: #A49C9B;
         overflow-x: hidden;
-        height: 170vh;
+        height: 175vh;
         width: 100vw;
 
         .black-start {
@@ -167,7 +167,7 @@
             width: 100vw;
             height: max-content;
             position: absolute;
-            top: 0vh;
+            top: -15vh;
             
         .main-title {
             padding-top: 13vh;
@@ -216,11 +216,7 @@
                 }
                 .liste{
                     margin-top: 5vh;
-                    ul{
-                        text-decoration: none;
-                        list-style: none;
-                        margin-left: 2vw;
-                    }
+                    
                     a{
                         list-style: none;
                         text-decoration: none;
@@ -229,6 +225,12 @@
                             color: white;
                         }
                     }
+                }
+                ul{
+                    text-decoration: none;
+                    list-style: none;
+                    margin-left: 2vw;
+                    font-size: 1.3vh;
                 }
     
             }
