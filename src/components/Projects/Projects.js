@@ -4,206 +4,11 @@ import './Projects.css';
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 gsap.registerPlugin(ScrollTrigger);
 
-
 const Projects = () => {
 
-
     useEffect(() => {
-
-        // Paramètre qui permet de vérifier si l'utilisateur est sur mobile. 
-        var mql = window.matchMedia('(max-width: 600px)');
-    
-        if (mql.matches) {
-      /* pour la version mobile */
-
-      gsap.to(".fairmade",{
-        scrollTrigger: {
-            trigger :'.bandeau',
-            start: 'top 10%',
-            end : '+=3000px',
-            scrub: true
-        },
-        y: 100 ,
-        x: 100
-    
-    })
-    gsap.to(".fairmadeSquare",{
-        scrollTrigger: {
-            trigger :'.bandeau',
-            start: 'top 10%',
-            end : '+=3000px',
-            scrub: true
-        },
-        y: -100 ,
-        x: -100
-    
-    })
-    gsap.to(".twitter",{
-        scrollTrigger: {
-            trigger :'.twitterTitle',
-            start: 'top center',
-            end : '+=3000px',
-            scrub: true
-        },
-        y: -100 ,
-        x: -100
-    
-    })
-    gsap.to(".twitterSquare",{
-        scrollTrigger: {
-            trigger :'.twitterTitle',
-            start: 'top center',
-            end : '+=3000px',
-            scrub: true
-        },
-        y: 100 ,
-        x: 100
-    
-    })
-    gsap.to(".weather",{
-        scrollTrigger: {
-            trigger :'.weatherTitle',
-            start: 'top center',
-            end : '+=3000px',
-            scrub: true
-        },
-        y: 100 ,
-        x: 100
-    
-    })
-    gsap.to(".weatherSquare",{
-        scrollTrigger: {
-            trigger :'.weatherTitle',
-            start: 'top center',
-            end : '+=3000px',
-            scrub: true
-        },
-        y: -100 ,
-        x: -100
-    
-    })
-    gsap.to(".recipe",{
-        scrollTrigger: {
-            trigger :'.recipeTitle',
-            start: 'top center',
-            end : '+=3000px',
-            scrub: true
-        },
-        y: -100 ,
-        x: -100
-    
-    })
-    gsap.to(".recipeSquare",{
-        scrollTrigger: {
-            trigger :'.recipeTitle',
-            start: 'top center',
-            end : '+=3000px',
-            scrub: true
-        },
-        y: 100 ,
-        x: 100
-    
-    })
-
-
-    } else {
-      /* pour la version desktop */
-
-      gsap.to(".fairmade",{
-        scrollTrigger: {
-            trigger :'.bandeau',
-            start: 'top 10%',
-            end : '+=3000px',
-            scrub: true
-        },
-        y: 100 ,
-        x: 100
-    
-    })
-    gsap.to(".fairmadeSquare",{
-        scrollTrigger: {
-            trigger :'.bandeau',
-            start: 'top 10%',
-            end : '+=3000px',
-            scrub: true
-        },
-        y: -100 ,
-        x: -100
-    
-    })
-    gsap.to(".twitter",{
-        scrollTrigger: {
-            trigger :'.fairmade',
-            start: 'top 10%',
-            end : '+=3000px',
-            scrub: true
-        },
-        y: -100 ,
-        x: -100
-    
-    })
-    gsap.to(".twitterSquare",{
-        scrollTrigger: {
-            trigger :'.fairmade',
-            start: 'top 10%',
-            end : '+=3000px',
-            scrub: true
-        },
-        y: 100 ,
-        x: 100
-    
-    })
-    gsap.to(".weather",{
-        scrollTrigger: {
-            trigger :'.twitter',
-            start: 'top center',
-            end : '+=3000px',
-            scrub: true
-        },
-        y: 100 ,
-        x: 100
-    
-    })
-    gsap.to(".weatherSquare",{
-        scrollTrigger: {
-            trigger :'.twitter',
-            start: 'top center',
-            end : '+=3000px',
-            scrub: true
-        },
-        y: -100 ,
-        x: -100
-    
-    })
-    gsap.to(".recipe",{
-        scrollTrigger: {
-            trigger :'.weather',
-            start: 'top center',
-            end : '+=3000px',
-            scrub: true
-        },
-        y: -100 ,
-        x: -100
-    
-    })
-    gsap.to(".recipeSquare",{
-        scrollTrigger: {
-            trigger :'.weather',
-            start: 'top center',
-            end : '+=3000px',
-            scrub: true
-        },
-        y: 100 ,
-        x: 100
-    
-    })
-
-    }
  
         }, [])
-
-   
-
 
     return (
         <div id="bandeau" className="bandeau">
@@ -217,82 +22,95 @@ const Projects = () => {
                 <span className="photo02">PROJECTS</span>
                 <span className="photo01">PROJECTS</span>
                 <span className="photo02">PROJECTS</span>
- 
             </div>
-
+        <div className="projects">
+            <div className="hutownBlock">
+                <img src={require ('../../images/hutown.png').default} alt="" className="hutownImg"/>
+                <div className="description">
+                    <h2>HUTOWN</h2>
+                    <p>Portfolio pour un photographe qui souhaite lancer son activité. Le site web fait également 
+                        office de boutique en ligne, afin qu'il puisse mettre en avant ses créations. 
+                        L'utilisateur peut ajouter, supprimer, modifier des photos, des produits.
+                        Il a également accès à une page qui sera dédiée à la mise en avant d'un artiste choisi par ses soins.<br/> 
+                        Site en cours de construction. <br/> 
+                       Mise en ligne fin Janvier - début Février 2021</p>
+                    <h3>Technologies utilisées</h3>
+                    <ul>
+                        <li>ReactJS / JavaScript</li>
+                        <li>Express / NodeJS</li>
+                        <li>Mongoose / MongoDB</li>
+                        <li>Axios</li>
+                        <li>Sass / HTML5</li>
+                        <li>GSAP</li>
+                        <li className="github">Code visible sur GitHub <a href="https://github.com/RomainBERNAZ/hutown"><i className="fab fa-github"></i></a></li>
+                    </ul>
+                    <p className="github"></p>
+                </div> 
+            </div>
         <div className="fairmadeBlock">
-                <div className="fairmadeImage">
-                <img src={require ('../../images/fairmade.png').default} alt="" className="fairmade"/> 
-                    <div className="fairmadeSquare"></div>
-                </div>
-                <div className="fairmadeText">
-                <div className="fairmadeTitle">FAIRMADE.FR</div>
-                    <div className="fairmadeExp">
-                        Site Web e-commerce WordPress <br/>
-                        Template Shop-Isle <br/>
-                        Accompagnement client complet <br/>
-                        CSS personnalisé <br/>
-                    </div>
-                <a target="_blank" href="https://www.fairmade.fr"> <i  className="fas fa-arrow-right"></i></a>
-                </div>
+        <div className="description">
+                    <h2>FAIRMADE</h2>
+                    <p>Site web e-commerce réalisé avec WordPress et un template pour une personne souhaitant lancer une boutique en ligne.
+                       La thematique étant le bio, le respect de l'environnement et des conditions de travail, j'ai essayé de garder quelque chose 
+                       d'assez épuré avec tes tons plutôt clairs. Le site est en route depuis plusieurs mois maintenant, et je continue d'accompagner 
+                       la personne en charge du projet assez régulièrement.
+                    </p>
+                    <h3>Technologies utilisées</h3>
+                    <ul>
+                        <li>WordPress</li>
+                        <li>Template : ShopIsle</li>
+                        <li>Plugins: WooCommerce / Yoast / ContactForm / Elementor ...</li>
+                        <li>CSS personnalisé</li>
+                        <li>Animations en CSS brut</li>
+                        <li className="github">Site visible ici <a href="https://fairmade.fr/"><i className="fas fa-caret-square-right"></i></a></li>
+                    </ul>
+                    <p className="github"></p>
+                </div> 
+                <img src={require ('../../images/fairmade.png').default} alt="" className="fairmadeImg"/> 
         </div>
-
-        <div className="twitterBlock">
-                <div className="twitterText">
-                <div className="twitterTitle">TWITTER BOT</div>
-                    <div className="twitterExp">
-                        V1 <br/>
-                        Donne le nombre de places de parkings disponibles <br/>
-                        Fonctionne avec l'API de Nantes Métropole <br/>
-                        NODE JS
-                         
-                    </div>
-                    <a target="_blank" href="https://twitter.com/ParkNantesBot"> <i  className="fas fa-arrow-right"></i></a>
-                </div>
-                <div className="twitterImage">
-              <img src={require('../../images/twitter.png').default} alt="" className="twitter"/>      
-                    <div className="twitterSquare"></div>
-                </div>
-        </div>
-
-        <div className="weatherBlock">
-                <div className="weatherImage">
-              <img src={require ('../../images/weather.png').default} alt="" className="weather"/>     
-                    <div className="weatherSquare"></div>
-                </div>
-                <div className="weatherText">
-                    <div className="weatherTitle">WEATHER APP</div>
-                    <div className="weatherExp">
-                        V1 <br/>
-                        Donne la météo de la ville entrée en paramètre <br/>
-                        Affiche la ville, une icone et la température<br/>
-                        Fonctionne avec l'API OpenWeatherMap  <br/>
-                        HTML / CSS / REACT 
-                        
-                    </div>
-                    <a target="_blank" href="https://romainbernaz.github.io/weatherApp/"> <i  className="fas fa-arrow-right"></i></a>
-                </div>
-        </div>
-  
         <div className="recipeBlock">
-                <div className="recipeText">
-                    <div className="recipeTitle">RECIPE APP</div>
-                    <div className="recipeExp">
-                        V1 <br/>
-                        Création de compte et login / Déconnexion<br/>
-                        Création / Suppression de recette<br/>
-                        Gestion des routes utilisateurs <br/>
-                        REACT / SASS / STRAPI / AXIOS
-                        
-                    </div>
-                    <a target="_blank" href="https://react-recipe-app-strapi.herokuapp.com/"> <i  className="fas fa-arrow-right"></i></a>
-                </div>
-                <div className="recipeImage">
-                  <img src={require ('../../images/recipe.png').default} alt="" className="recipe"/>
-                    <div className="recipeSquare"></div>
-                </div>
+                <img src={require ('../../images/recipe.png').default} alt="" className="recipeImg"/>
+                <div className="description">
+                    <h2>RECIPE APP</h2>
+                    <p>Premier projet de taille moyenne en ReactJs que j'ai réalisé. Cette application de recette est pleinement fonctionnelle.
+                        Il est possible de se connecter, ou de créer un profil utilisateur si besoin. L'utilisateur connecté peut alors ajouter ou supprimer
+                        des recettes. L'application fonctionne avec le CMS Strapi, qui m'a permis de stocker mes données et de les récupérer
+                        via leur API. Elle est hébergée sur Heroku via leur fonction free, et peut donc pour le premier démarrage être un peu longue.
+                    </p>
+                    <h3>Technologies utilisées</h3>
+                    <ul>
+                        <li>ReactJS / JavaScript</li>
+                        <li>Strapi</li>
+                        <li>Axios</li>
+                        <li>Sass / HTML5</li>
+                        <li className="github">Code visible sur GitHub <a href="https://github.com/RomainBERNAZ/recipe"><i className="fab fa-github"></i></a></li>
+                        <li className="github">Site visible ici <a href="https://react-recipe-app-strapi.herokuapp.com/"><i className="fas fa-caret-square-right"></i></a></li>
+                    </ul>
+                    <p className="github"></p>
+                </div> 
+        </div>
+        <div className="twitterBlock">
+        <div className="description">
+                    <h2>TWITTER BOT</h2>
+                    <p>Premier bot twitter réalisé par mes soins. Pour sa première version, il est capable de deux actions. Si un utilisateur
+                        lui envoi un tweet au hasard il lui proposera de lui reposer une question avec le mot 'parking' dedans. Une fois cette 
+                        deuxième étape, il répondra avec un tweet indiquant à la personne l'état de remplissage des parkings de Nantes Métropole. 
+                        Il est développé en NodeJs avec l'API de la ville de Nantes qui fournit les données demandées.
+                    </p>
+                    <h3>Technologies utilisées</h3>
+                    <ul>
+                        <li>NodeJS</li>
+                        <li className="github">Code visible sur GitHub <a href="https://github.com/RomainBERNAZ/parkingBot"><i className="fab fa-github"></i></a></li>
+                        <li className="github">Compte Twitter visible ici <a href="https://twitter.com/ParkNantesBot"><i className="fas fa-caret-square-right"></i></a></li>
+                    </ul>
+                    <p className="github"></p>
+                </div> 
+              <img src={require('../../images/twitter.png').default} alt="" className="twitterImg"/>      
         </div>
 
+        <h2 className="sentenceEnd">D'autres projets de plus petite taille ou reprenant les concepts de ceux visibles précedemment sont disponibles sur mon GitHub.</h2>
+
+        </div>
 
         </div>
 

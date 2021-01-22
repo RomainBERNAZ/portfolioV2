@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from 'react';
 import { gsap, Power4, TimelineLite  } from 'gsap';
 import photo from '../../images/principale.png'
-import resume from '../../images/ROMAIN-BERNAZ.pdf'
+import resume from '../../images/CV ROMAIN BERNAZ.pdf'
 import './About.css';
 
 
@@ -74,17 +74,18 @@ const About = () => {
             <p className="pres">Hi, I'm Romain. Almost 30 years old. <br/>
            I'm a Junior Web developer looking for opportunities. <br/>
            I graduated from ENI école informatique last year. <br/>
-           Study contrat would be perfect. A normal job is fine as well. <br/>
+           FrontEnd job would be perfect !<br/>
         </p>
         <p className="liste">
             Non-exhaustive list of languages and librairy that I work with: <br/>
         </p>
             <ul>
-                <li>- JavaScript x React</li>
-                <li>- HTML5</li>
-                <li>- CSS3</li>
-                <li>- JAVA</li>
-                <li>- NODEJS</li>
+                <li>- JavaScript / ReactJS</li>
+                <li>- Java</li>
+                <li>- HTML5 / SASS / GSAP</li>
+                <li>- MongoDb / MySQL</li>
+                <li>- WordPress / Strapi</li>
+                <li>- EXPRESS / NodeJS</li>
 
             </ul>
         <p className="liste">

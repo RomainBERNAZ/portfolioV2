@@ -6,7 +6,7 @@
         height: 100%;
         width: 100vw;
         background-color: black;
-        position: absolute;
+        position: fixed;
         z-index: 50;
         overflow-x: hidden !important;
 
@@ -41,7 +41,6 @@
     }
     .main-title {
         height: 45vh;
-
         h3 {
             color: black;
             font-family: Morganite;
@@ -56,15 +55,15 @@
 
     }
     .presentation{
-        margin-top: 15vh;
+        margin-left: 7vw;
+        margin-top: 5vh;
         width: 100vw;
         display: inline-flex;
         .text-presentation{
             width: 50vw;
             p{
-                line-height: 5vh;
                 margin-left: 5vw;
-                font-size: 2.4em;
+                font-size: 1.9em;
                 font-family: Champagne;
             }  
             .contact{
@@ -86,14 +85,14 @@
                 list-style: none;
                 margin-left: 2vw;
                 li{
-                    margin-top: 3vh;
+                    margin-top: 1vh;
                     font-family: Champagne;
-                    font-size: 2.4em;
+                    font-size: 1.9em;
                     margin-left: 4vw;
                 }
             }
             .liste{
-                margin-top: 5vh;
+                margin-top: 3vh;
                 
                 a{
                     list-style: none;
@@ -107,11 +106,11 @@
 
         }
          .image-presentation{
-             width: 50vw;
+             width: 20vw;
              text-align: center;
             img{
                 margin-left: 5vw;
-                height: 80vh;
+                height: 60vh;
             }
 
          }

@@ -8,7 +8,7 @@
   height: 100%;
   width: 100vw;
   background-color: black;
-  position: absolute;
+  position: fixed;
   z-index: 50;
   overflow-x: hidden !important;
 }
@@ -60,7 +60,8 @@
 }
 
 .container-about .presentation {
-  margin-top: 15vh;
+  margin-left: 7vw;
+  margin-top: 5vh;
   width: 100vw;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -72,9 +73,8 @@
 }
 
 .container-about .presentation .text-presentation p {
-  line-height: 5vh;
   margin-left: 5vw;
-  font-size: 2.4em;
+  font-size: 1.9em;
   font-family: Champagne;
 }
 
@@ -103,14 +103,14 @@
 }
 
 .container-about .presentation .text-presentation ul li {
-  margin-top: 3vh;
+  margin-top: 1vh;
   font-family: Champagne;
-  font-size: 2.4em;
+  font-size: 1.9em;
   margin-left: 4vw;
 }
 
 .container-about .presentation .text-presentation .liste {
-  margin-top: 5vh;
+  margin-top: 3vh;
 }
 
 .container-about .presentation .text-presentation .liste a {
@@ -124,13 +124,13 @@
 }
 
 .container-about .presentation .image-presentation {
-  width: 50vw;
+  width: 20vw;
   text-align: center;
 }
 
 .container-about .presentation .image-presentation img {
   margin-left: 5vw;
-  height: 80vh;
+  height: 60vh;
 }
 
 @media screen and (max-width: 890px) {
