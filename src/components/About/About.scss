@@ -1,7 +1,7 @@
 .container-about{
     background-color: #A49C9B;
     overflow-x: hidden;
-    height: 160vh; 
+    height: 100vh; 
     .black-start {
         height: 100%;
         width: 100vw;
@@ -56,18 +56,18 @@
     }
     .presentation{
         margin-left: 7vw;
-        margin-top: 5vh;
+        margin-top: 3vh;
         width: 100vw;
         display: inline-flex;
         .text-presentation{
             width: 50vw;
             p{
                 margin-left: 5vw;
-                font-size: 1.9em;
+                font-size: 1.5em;
                 font-family: Champagne;
             }  
             .contact{
-                margin-top: 5vh;
+                margin-top: 1vh;
                 a{
                     margin-left: 1vw;
                     i{
@@ -87,7 +87,7 @@
                 li{
                     margin-top: 1vh;
                     font-family: Champagne;
-                    font-size: 1.9em;
+                    font-size: 1.5em;
                     margin-left: 4vw;
                 }
             }
@@ -106,11 +106,11 @@
 
         }
          .image-presentation{
-             width: 20vw;
+             width: 30vw;
              text-align: center;
             img{
                 margin-left: 5vw;
-                height: 60vh;
+                height: 50vh;
             }
 
          }
@@ -124,7 +124,7 @@
     .container-about{
         background-color: #A49C9B;
         overflow-x: hidden;
-        height: 175vh;
+        height: 150vh;
         width: 100vw;
 
         .black-start {
@@ -191,8 +191,9 @@
             margin-top: -5vh;
             width: 100vw;
             display: block;
+            text-align: justify;
             .text-presentation{
-                width: 100vw;
+                width: 80vw;
                 p{
                     line-height: 5vh;
                     margin-left: 2vw;
@@ -229,7 +230,7 @@
                     text-decoration: none;
                     list-style: none;
                     margin-left: 2vw;
-                    font-size: 1.3vh;
+                    font-size: 0.8em;
                 }
     
             }

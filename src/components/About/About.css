@@ -1,7 +1,7 @@
 .container-about {
   background-color: #A49C9B;
   overflow-x: hidden;
-  height: 160vh;
+  height: 100vh;
 }
 
 .container-about .black-start {
@@ -61,7 +61,7 @@
 
 .container-about .presentation {
   margin-left: 7vw;
-  margin-top: 5vh;
+  margin-top: 3vh;
   width: 100vw;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -74,12 +74,12 @@
 
 .container-about .presentation .text-presentation p {
   margin-left: 5vw;
-  font-size: 1.9em;
+  font-size: 1.5em;
   font-family: Champagne;
 }
 
 .container-about .presentation .text-presentation .contact {
-  margin-top: 5vh;
+  margin-top: 1vh;
 }
 
 .container-about .presentation .text-presentation .contact a {
@@ -105,7 +105,7 @@
 .container-about .presentation .text-presentation ul li {
   margin-top: 1vh;
   font-family: Champagne;
-  font-size: 1.9em;
+  font-size: 1.5em;
   margin-left: 4vw;
 }
 
@@ -124,20 +124,20 @@
 }
 
 .container-about .presentation .image-presentation {
-  width: 20vw;
+  width: 30vw;
   text-align: center;
 }
 
 .container-about .presentation .image-presentation img {
   margin-left: 5vw;
-  height: 60vh;
+  height: 50vh;
 }
 
 @media screen and (max-width: 890px) {
   .container-about {
     background-color: #A49C9B;
     overflow-x: hidden;
-    height: 175vh;
+    height: 150vh;
     width: 100vw;
   }
   .container-about .black-start {
@@ -202,9 +202,10 @@
     margin-top: -5vh;
     width: 100vw;
     display: block;
+    text-align: justify;
   }
   .container-about .div-about .presentation .text-presentation {
-    width: 100vw;
+    width: 80vw;
   }
   .container-about .div-about .presentation .text-presentation p {
     line-height: 5vh;
@@ -241,7 +242,7 @@
     text-decoration: none;
     list-style: none;
     margin-left: 2vw;
-    font-size: 1.3vh;
+    font-size: 0.8em;
   }
   .container-about .div-about .presentation .image-presentation {
     width: 100vw;

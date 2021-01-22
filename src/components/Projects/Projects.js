@@ -28,6 +28,7 @@ const Projects = () => {
                 <img src={require ('../../images/hutown.png').default} alt="" className="hutownImg"/>
                 <div className="description">
                     <h2>HUTOWN</h2>
+                <img src={require ('../../images/hutown.png').default} alt="" className="hutownMobile"/>
                     <p>Portfolio pour un photographe qui souhaite lancer son activité. Le site web fait également 
                         office de boutique en ligne, afin qu'il puisse mettre en avant ses créations. 
                         L'utilisateur peut ajouter, supprimer, modifier des photos, des produits.
@@ -50,6 +51,7 @@ const Projects = () => {
         <div className="fairmadeBlock">
         <div className="description">
                     <h2>FAIRMADE</h2>
+                    <img src={require ('../../images/fairmade.png').default} alt="" className="fairmadeMobile"/> 
                     <p>Site web e-commerce réalisé avec WordPress et un template pour une personne souhaitant lancer une boutique en ligne.
                        La thematique étant le bio, le respect de l'environnement et des conditions de travail, j'ai essayé de garder quelque chose 
                        d'assez épuré avec tes tons plutôt clairs. Le site est en route depuis plusieurs mois maintenant, et je continue d'accompagner 
@@ -72,6 +74,7 @@ const Projects = () => {
                 <img src={require ('../../images/recipe.png').default} alt="" className="recipeImg"/>
                 <div className="description">
                     <h2>RECIPE APP</h2>
+                    <img src={require ('../../images/recipe.png').default} alt="" className="recipeMobile"/>
                     <p>Premier projet de taille moyenne en ReactJs que j'ai réalisé. Cette application de recette est pleinement fonctionnelle.
                         Il est possible de se connecter, ou de créer un profil utilisateur si besoin. L'utilisateur connecté peut alors ajouter ou supprimer
                         des recettes. L'application fonctionne avec le CMS Strapi, qui m'a permis de stocker mes données et de les récupérer
@@ -92,6 +95,7 @@ const Projects = () => {
         <div className="twitterBlock">
         <div className="description">
                     <h2>TWITTER BOT</h2>
+                    <img src={require('../../images/twitter.png').default} alt="" className="twitterMobile"/>  
                     <p>Premier bot twitter réalisé par mes soins. Pour sa première version, il est capable de deux actions. Si un utilisateur
                         lui envoi un tweet au hasard il lui proposera de lui reposer une question avec le mot 'parking' dedans. Une fois cette 
                         deuxième étape, il répondra avec un tweet indiquant à la personne l'état de remplissage des parkings de Nantes Métropole. 

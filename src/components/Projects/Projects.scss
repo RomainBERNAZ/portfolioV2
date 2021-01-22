@@ -159,6 +159,8 @@
         width: 100vw;
         background-color: black;
 
+        h3{margin-top: 5vh;}
+
         .photo {
             display: inline-flex;
             animation: slideshow 30s infinite linear;
@@ -173,6 +175,58 @@
                 padding-left: 5vw;
                 padding-top: 2vh;
                 font-size: 10vh;
+            }
+        }
+        .projects{
+            .hutownBlock{
+                display: block;
+                .hutownImg{
+                    display: none;
+                }
+                .hutownMobile{
+                    margin-top: 5vh;
+                    margin-bottom: 5vh;
+                    width: 90vw;
+                }
+            }
+            .fairmadeBlock{
+                display: block;
+                margin-right: 0;
+                .fairmadeImg{
+                    display: none;
+                }
+                .fairmadeMobile{
+                    margin-top: 5vh;
+                    margin-bottom: 5vh;
+                    width: 90vw;
+                }
+                li{padding-left: 2vw;
+                    padding-right: 2vw;}
+            }
+            .recipeBlock{
+                display: block;
+                margin-right: 0;
+                .recipeImg{
+                    display: none;
+                }
+                .recipeMobile{
+                    margin-top: 5vh;
+                    margin-bottom: 5vh;
+                    width: 90vw;
+                }
+            }
+            .twitterBlock{
+                margin-top: 5vh;
+                display: block;
+                margin-right: 0;
+                .twitterImg{
+                    display: none;
+                }
+                .twitterMobile{
+                    margin-top: 5vH;
+                    margin-bottom: 5vh;
+                    width: 90vw;
+                }
             }
         }
     }
