@@ -88,6 +88,7 @@
        }
         .hutownBlock {
             display: inline-flex;
+            .hutownMobile{display: none;}
             .hutownImg {
                 margin-left: 5vw;
                 max-width: 60vw;
@@ -99,6 +100,7 @@
             justify-content: flex-end;
             margin-top: 30vh;
             margin-right: 10vw;
+            .fairmadeMobile{display: none;}
             .fairmadeImg {
                 margin-left: 2vw;
                 max-width: 60vw;
@@ -109,6 +111,7 @@
         .recipeBlock {
             margin-top: 30vh;
             display: inline-flex;
+            .recipeMobile{display: none;}
             .recipeImg {
                 margin-left: 10vw;
                 max-width: 60vw;
@@ -121,7 +124,7 @@
             justify-content: flex-end;
             margin-top: 30vh;
             margin-right: 10vw;
-
+            .twitterMobile{display: none;}
             .twitterImg {
                 margin-left: 2vw;
                 max-width: 60vw;

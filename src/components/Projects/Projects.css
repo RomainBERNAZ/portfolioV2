@@ -119,6 +119,10 @@
   display: inline-flex;
 }
 
+.bandeau .projects .hutownBlock .hutownMobile {
+  display: none;
+}
+
 .bandeau .projects .hutownBlock .hutownImg {
   margin-left: 5vw;
   max-width: 60vw;
@@ -136,6 +140,10 @@
   margin-right: 10vw;
 }
 
+.bandeau .projects .fairmadeBlock .fairmadeMobile {
+  display: none;
+}
+
 .bandeau .projects .fairmadeBlock .fairmadeImg {
   margin-left: 2vw;
   max-width: 60vw;
@@ -147,6 +155,10 @@
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+}
+
+.bandeau .projects .recipeBlock .recipeMobile {
+  display: none;
 }
 
 .bandeau .projects .recipeBlock .recipeImg {
@@ -164,6 +176,10 @@
           justify-content: flex-end;
   margin-top: 30vh;
   margin-right: 10vw;
+}
+
+.bandeau .projects .twitterBlock .twitterMobile {
+  display: none;
 }
 
 .bandeau .projects .twitterBlock .twitterImg {
