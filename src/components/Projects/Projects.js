@@ -27,14 +27,13 @@ const Projects = () => {
             <div className="hutownBlock">
                 <img src={require ('../../images/hutown.png').default} alt="" className="hutownImg"/>
                 <div className="description">
-                    <h2>HUTOWN</h2>
+                    <h2>HIPPOLYTHE</h2>
                 <img src={require ('../../images/hutown.png').default} alt="" className="hutownMobile"/>
                     <p>Portfolio pour un photographe qui souhaite lancer son activité. Le site web fait également 
                         office de boutique en ligne, afin qu'il puisse mettre en avant ses créations. 
                         L'utilisateur peut ajouter, supprimer, modifier des photos, des produits.
                         Il a également accès à une page qui sera dédiée à la mise en avant d'un artiste choisi par ses soins.<br/> 
-                        Site en cours de construction. <br/> 
-                       Mise en ligne fin Janvier - début Février 2021</p>
+                        </p>
                     <h3>Technologies utilisées</h3>
                     <ul>
                         <li>ReactJS / JavaScript</li>
@@ -43,7 +42,7 @@ const Projects = () => {
                         <li>Axios</li>
                         <li>Sass / HTML5</li>
                         <li>GSAP</li>
-                        <li className="github">Code visible sur GitHub <a href="https://github.com/RomainBERNAZ/hutown"><i className="fab fa-github"></i></a></li>
+                        <li className="github">Site visible ici <a href="https://www.hippolythe.com/"><i className="fas fa-caret-square-right"></i></a></li>
                     </ul>
                     <p className="github"></p>
                 </div> 
